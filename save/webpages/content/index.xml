@@ -1,36 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MyCoReWebPage>
-  <section xml:lang="de" title="Willkommen bei der Digitalen Bibliothek">
+  <section xml:lang="de" title="Willkommen beim Medienarchiv der Günter Grass Stiftung Bremen">
     <div class="jumbotwo">
       <div class="row">
         <div class="col-md-6" lang="de">
-          <h3>
-            Inhalt
-          </h3>
           <p>
-            Ab dem 2. Halbjahr 2016 wird die Datenbankrecherche mit diversen Suchfunktionen komfortabel
-            über das World Wide Web möglich. Sie erhalten Zugang zu den Metadaten von rund 2500
-            audiovisuellen Dokumenten von, über und mit Günter Grass. Der Zugang zu den jeweiligen
-            Audio- und Videobeiträgen über das Internet ist aufgrund der Urheberrechte zunächst noch
-            nicht möglich. Zu rechtlich freigegebenen Dokumenten ist eine Sichtung als Stream in Planung.
+            In der Webdatenbank finden Sie Audio- und Videobeiträge von, über und mit Günter Grass und
+            die zeitgeschichtlichen Kontexte. Sie haben die Möglichkeit, in den Metadaten sowie Abstracts
+            zu recherchieren und aus diesen in Ihrer wissenschaftlichen Arbeit zu zitieren.
+          </p>
+          <p>
+            Hinweise zur Nutzung und zur rechtlichen Situation:<br />
+            Aufgrund der Urheberrechte ist nur Teil der audiovisuellen Beiträge im Web zu sehen, bzw. zu
+            hören (Grün gekennzeichnete Dokumente).  Mit Nachweis der Zugehörigkeit zu einer Universität oder
+            ähnlichen wissenschaftlichen Einrichtungen bekommen Sie Zugang zu weiteren AV-Dokumenten.
+            Verwenden Sie dazu die „Registrierung“.
+          </p>
+          <p>
+            Die weitere Verwendung, wie z.B. das Kopieren, Abfilmen/Rippen oder Publizieren der AV-Dokumente
+            ist nicht gestattet. Bitte fragen Sie dazu die jeweiligen Rechteinhaber an.
+            <a data-toggle="collapse" href="#collapseRights" aria-expanded="false" aria-controls="collapseRights"
+            >*Auf Wunsch unterstützen wir Sie bei diesen Anfragen.</a>
           </p>
         </div>
         <div class="col-md-1" lang="de">
           &#160;
         </div>
         <div class="col-md-4" lang="de">
-          <h3>
-            Förderung
-          </h3>
           <p>
-            Die Umsetzung ist durch die Förderung der DFG möglich.<br />
+            Die Entwicklung der Datenbank ist ein Kooperationsprojekt mit der GBV/VZG und wurde von der DFG gefördert.<br />
             <img src="../images/logos/Logo_DFG.jpg" alt="Logo der DFG" height="78" border="0" width="182" />
           </p>
         </div>
       </div>
     </div>
+    <div class="collapse" id="collapseRights">
+      <p>
+        Die Günter Grass Stiftung Medienarchiv ist ein audiovisuelles Archiv, das Dokumente aus den
+        Beständen der ARD - Anstalten erschließen darf. Das ist ein erstmaliger und bisher einmaliger
+        Vorgang und somit unterliegt die Nutzung besonderen Sicherheitsmaßnahmen, deren Verletzung
+        einer strafbaren Handlung gleichkommt.
+      </p>
+      <p>
+        Mit der Nutzung des Streams erklären Sie sich automatisch mit folgenden Regelungen einverstanden:
+      </p>
+      <ul>
+        <li>
+          Das audiovisuelle Archivmaterial bzw. der Link zu den Daten darf nicht - auch nicht in
+          Ausschnitten - kopiert oder weitergegeben werden.
+        </li>
+        <li>
+          Das audiovisuelle Archivmaterial darf nicht - auch nicht in Ausschnitten - transkribiert werden.
+        </li>
+        <li>
+          Das audiovisuelle Archivmaterial darf nicht in Arbeiten verwendet werden.
+        </li>
+        <li>
+          Die Rechte für die Verwendung von audiovisuellem Archivmaterial in wissenschaftlichen Arbeiten
+          oder Produktionen liegen bei dem jeweiligen Sender und sind dort einzuholen.
+        </li>
+        <li>
+          Die Rechte für die Verwendung von Printmaterialien und Fotografien sind bei den Urhebern und
+          dort einzuholen
+        </li>
+        <li>
+          Die Verantwortung für die Einhaltung des geltenden Urheberrechts liegt bei den Nutzerinnen und Nutzern.
+        </li>
+      </ul>
+    </div>
     </section>
     <meta>
-        <log lastEditor="administrator" date="2016-03-31" time="12:16"/>
+        <log lastEditor="administrator" date="2016-08-22" time="09:52"/>
     </meta>
 </MyCoReWebPage>

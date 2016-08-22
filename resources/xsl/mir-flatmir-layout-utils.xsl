@@ -68,8 +68,8 @@
     <xsl:if test="//div/@class='jumbotwo'">
       <div class="jumbotron">
         <div class="container">
-          <h1>Webdatenbank für die Günter Grass Stiftung Bremen</h1>
-          <h2>Dieser Auftritt befindet sich derzeit im Aufbau.</h2>
+          <h1>Medienarchiv Webdatenbank</h1>
+          <h2>Günter Grass Stiftung Bremen</h2>
         </div>
       </div>
     </xsl:if>
