@@ -31,7 +31,7 @@
       </div>
       <div id="project_logo_box">
         <a title="zur Homepage der Günter Grass Stiftung Bremen - Medienarchiv" href="http://www.grass-medienarchiv.de" class="navbar-brand">
-          <img alt="Logo der Günter Grass Stiftung Bremen" src="{$WebApplicationBaseURL}images/ggrass_logo.png" />
+          <img alt="Logo der Günter Grass Stiftung Bremen" src="{$WebApplicationBaseURL}images/logos/ggrass_logo.png" />
         </a>
       </div>
     </div>

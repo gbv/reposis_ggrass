@@ -126,6 +126,10 @@ h1 {
 
 
 /* *********************** header *********************** */
+html body header #header_box {
+    margin-top: 80px;
+}
+
 #project_name_box h1 > a {
   color: #83b4ba;
   font-family: Roboto, sans-serif;
@@ -146,9 +150,9 @@ h1 {
 }
 
 #project_logo_box {
-    position: absolute;
-    left: 0px;
-    top: -74px;
+  position: absolute;
+  left: 1330px;
+  top: 55px;
 }
 
 /* *********************** footer *********************** */
