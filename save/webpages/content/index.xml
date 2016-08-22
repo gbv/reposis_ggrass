@@ -4,19 +4,19 @@
     <div class="row" id="ggrass_index">
       <div class="col-md-12" lang="de">
         <h1 class="text-center">Günter Grass Stiftung Bremen – Medienarchiv Webdatenbank</h1>
-        <p>
+        <p class="text-center">
           In der Webdatenbank finden Sie Audio- und Videobeiträge von, über und mit Günter Grass und
           die zeitgeschichtlichen Kontexte. Sie haben die Möglichkeit, in den Metadaten sowie Abstracts
           zu recherchieren und aus diesen in Ihrer wissenschaftlichen Arbeit zu zitieren.
         </p>
-        <p>
+        <p class="text-center">
           Hinweise zur Nutzung und zur rechtlichen Situation:<br />
           Aufgrund der Urheberrechte ist nur Teil der audiovisuellen Beiträge im Web zu sehen, bzw. zu
           hören (Grün gekennzeichnete Dokumente).  Mit Nachweis der Zugehörigkeit zu einer Universität oder
           ähnlichen wissenschaftlichen Einrichtungen bekommen Sie Zugang zu weiteren AV-Dokumenten.
           Verwenden Sie dazu die „Registrierung“.
         </p>
-        <p>
+        <p class="text-center">
           Die weitere Verwendung, wie z.B. das Kopieren, Abfilmen/Rippen oder Publizieren der AV-Dokumente
           ist nicht gestattet. Bitte fragen Sie dazu die jeweiligen Rechteinhaber an.
           <a data-toggle="collapse" href="#collapseRights" aria-expanded="false" aria-controls="collapseRights"
@@ -58,7 +58,7 @@
         </ul>
       </div>
       <div class="col-md-12" lang="de">
-        <p>
+        <p class="text-center">
           Die Entwicklung der Datenbank ist ein Kooperationsprojekt mit der GBV/VZG und wurde von der DFG gefördert.
         </p>
       </div>
