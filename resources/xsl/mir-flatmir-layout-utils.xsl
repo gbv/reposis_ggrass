@@ -86,10 +86,23 @@
 
   <xsl:template name="mir.powered_by">
     <xsl:variable name="mcr_version" select="concat('MyCoRe ',mcrver:getCompleteVersion())" />
-    <div id="powered_by">
-      <a href="http://www.mycore.de">
-        <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
-      </a>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div id="powered_by">
+            <a href="http://www.mycore.de">
+              <img src="{$WebApplicationBaseURL}mir-layout/images/mycore_logo_small_invert.png" title="{$mcr_version}" alt="powered by MyCoRe" />
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div id="sponsored_by">
+            <a href="http://www.dfg.de">
+              <img src="{$WebApplicationBaseURL}images/logos/DFG_Logo.png" title="Die Entwicklung der Datenbank wurde von der DFG gefördert." alt="sponsored by DFG" />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </xsl:template>
 

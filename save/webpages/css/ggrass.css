@@ -76,6 +76,13 @@ h1 {
 .navbar-default .navbar-nav > li {
   background-color: #83B4BA;
 }
+.mir-main-nav nav .navbar-nav .dropdown-menu > .active > a {
+  background-color: #62a0a8;
+}
+.mir-main-nav nav .navbar-nav .dropdown-menu > .active > a:hover,
+.mir-main-nav nav .navbar-nav .dropdown-menu > .active > a:focus {
+    color: #62a0a8;
+}
 .mir-main-nav {
     box-shadow: unset;
 }
