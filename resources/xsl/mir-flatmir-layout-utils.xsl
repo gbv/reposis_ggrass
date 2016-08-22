@@ -25,9 +25,14 @@
           </ul>
         </nav>
       </div>
-      <div id="project_logo_box">
-        <h1>Medienarchiv</h1>
+      <div id="project_name_box">
+        <h1><a href="{$WebApplicationBaseURL}">Medienarchiv</a></h1>
         <h2>Günter Grass Stiftung Bremen</h2>
+      </div>
+      <div id="project_logo_box">
+        <a title="zur Homepage der Günter Grass Stiftung Bremen - Medienarchiv" href="http://www.grass-medienarchiv.de" class="navbar-brand">
+          <img alt="Logo der Günter Grass Stiftung Bremen" src="{$WebApplicationBaseURL}images/ggrass_logo.png" />
+        </a>
       </div>
     </div>
 
