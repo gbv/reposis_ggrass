@@ -9,6 +9,16 @@
 
     <div id="header_box" class="clearfix container">
       <div id="options_nav_box" class="mir-prop-nav">
+
+        <div class="searchfield_box">
+          <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form navbar-left pull-right" role="search">
+            <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
+            <div class="form-group">
+              <input name="q" placeholder="Suche" class="form-control search-query" id="searchInput" type="text" />
+            </div>
+          </form>
+        </div>
+
         <nav>
           <ul class="nav navbar-nav pull-right">
             <xsl:call-template name="mir.loginMenu" />
@@ -16,12 +26,8 @@
         </nav>
       </div>
       <div id="project_logo_box">
-        <a href="{concat($WebApplicationBaseURL,substring($loaded_navigation_xml/@hrefStartingPage,2),$HttpSession)}"
-           class="">
-          <span id="logo_mir">Medienarchiv</span>
-          <span id="logo_modul">Günter Grass</span>
-          <span id="logo_slogan">Stiftung Bremen</span>
-        </a>
+        <h1>Medienarchiv</h1>
+        <h2>Günter Grass Stiftung Bremen</h2>
       </div>
     </div>
 
@@ -41,15 +47,6 @@
           </button>
         </div>
 
-        <div class="searchfield_box">
-          <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form navbar-left pull-right" role="search">
-            <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
-            <div class="form-group">
-              <input name="q" placeholder="Suche" class="form-control search-query" id="searchInput" type="text" />
-            </div>
-          </form>
-        </div>
-
         <nav class="collapse navbar-collapse mir-main-nav-entries">
           <ul class="nav navbar-nav pull-left">
             <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='search']" />
@@ -64,50 +61,15 @@
   </xsl:template>
 
   <xsl:template name="mir.jumbotwo">
-    <!-- show only on startpage -->
-    <xsl:if test="//div/@class='jumbotwo'">
-      <div class="jumbotron">
-        <div class="container">
-          <h1>Medienarchiv Webdatenbank</h1>
-          <h2>Günter Grass Stiftung Bremen</h2>
-        </div>
-      </div>
-    </xsl:if>
+    <!-- do nothing special -->
   </xsl:template>
 
   <xsl:template name="mir.footer">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md-4">
-          <h4>Über uns</h4>
-          <p>
-            Hier wird Ihnen ab dem 2. Halbjahr 2016 die Datenbank des Medienarchivs
-            der Günter Grass Stiftung Bremen für Recherchen zur Verfügung stehen.
-            <span class="read_more">
-              <a href="http://grass-medienarchiv.gbv.de/">Mehr erfahren ...</a>
-            </span>
-          </p>
-        </div>
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <h4>Navigation</h4>
-          <ul class="internal_links">
-            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='brand']/*" />
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <h4>Netzwerke</h4>
-          <ul class="social_links">
-            <li><a href="#"><button type="button" class="social_icons social_icon_fb"></button>Facebook</a></li>
-            <li><a href="#"><button type="button" class="social_icons social_icon_tw"></button>Twitter</a></li>
-            <li><a href="#"><button type="button" class="social_icons social_icon_gg"></button>Google+</a></li>
-          </ul>
-        </div>
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <h4>Layout based on</h4>
-          <ul class="internal_links">
-            <li><a href="{$WebApplicationBaseURL}mir-layout/template/flatmir.xml">flatmir</a></li>
-            <li><a href="http://getbootstrap.com/">Bootstrap</a></li>
-            <li><a href="http://bootswatch.com/">Bootswatch</a></li>
+        <div class="col-md-12">
+          <ul class="internal_links nav navbar-nav">
+            <xsl:apply-templates select="$loaded_navigation_xml/menu[@id='below']/*" />
           </ul>
         </div>
       </div>

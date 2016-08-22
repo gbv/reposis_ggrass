@@ -1,8 +1,117 @@
-html body .jumbotron {
-  color: #83B4BA;
-  background: unset;
-  background-color: #ecf0f1;
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v15/Hgo13k-tfSpn0qi1SFdUfVtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+
+.searchfield_box {
+    display: none;
+}
+
+
+html body {
+  font-family: 'Roboto', sans-serif;
+  color: #1d1d1d;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+
+/* navigation */
+.mir-main-nav .container {
+    position: relative;
+}
+.mir-main-nav nav .navbar-nav {
+  margin: 0px 0px 0px 200px;
+}
+.mir-main-nav .navbar-header {
+  float: right;
+  margin: 0 0 0 0;
+}
+.navbar {
+  position: inherit;
+  min-height: 30px;
+  background-color: white;
+  border-top: 6px solid #83B4BA;
+}
+.navbar-default .navbar-nav > li {
+  background-color: #83B4BA;
+}
+.mir-main-nav {
+    box-shadow: unset;
+}
+.mir-main-nav nav .navbar-nav .dropdown-menu > li > a:hover,
+.mir-main-nav nav .navbar-nav .dropdown-menu > li > a,
+.mir-main-nav .navbar-nav > li > a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+}
+.mir-main-nav .nav > li > a {
+  padding: 9px 21px;
+}
+.nav > li {
+  border-left: 1px solid #fff;
+}
+.mir-main-nav nav .navbar-nav > li > a:hover .caret {
+    border-top-color: #83B4BA !important;
+}
+.mir-main-nav nav .navbar-nav .dropdown-menu::before {
+    border-color: transparent transparent #83B4BA transparent;
+}
+.mir-main-nav nav .navbar-nav .dropdown-menu {
+  background-color: #83B4BA;
+  border: 0px !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0 0 !important;
+  margin: 0px !important;
+  padding: 0px;
+}
+.mir-main-nav nav .navbar-nav > li > a:hover,
+.mir-main-nav nav .navbar-nav .dropdown-menu > li > a:hover,
+.mir-main-nav nav .navbar-nav .dropdown-menu > li > a:focus {
+  color: #83B4BA;
+  background-color: white;
+}
+.mir-main-nav nav .navbar-nav .dropdown-menu > li > a {
+  border-top: 1px solid #99d3d9;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+
+/* index page */
+#ggrass_index h1 {
+  margin: 128px 0 79px 0;
+}
+
+
 
 html body #powered_by {
   background-color: white;
@@ -10,6 +119,12 @@ html body #powered_by {
 }
 
 .flatmir-footer {
-  color: #d1d1d1;
-  border: none;
+  margin-top: 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 130px; /* Set the fixed height of the footer here */
+}
+.panel-footer {
+    padding: 0;
 }
