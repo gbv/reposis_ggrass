@@ -31,8 +31,8 @@
         </nav>
       </div>
       <div id="project_name_box">
-        <h1><a href="{$WebApplicationBaseURL}">Medienarchiv</a></h1>
-        <h2>Günter Grass Stiftung Bremen</h2>
+        <h1><a href="{$WebApplicationBaseURL}">Webdatenbank</a></h1>
+        <h2>Medienarchiv</h2>
       </div>
     </div>
 
