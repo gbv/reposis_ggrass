@@ -3,27 +3,34 @@
 <MyCoReWebPage>
   <section xml:lang="de" title="Kontakt">
   <div>
-    <h2>Kontakt</h2>
+    <h1>Kontakt</h1>
+
+    <h2>Medienarchiv Günter Grass - Stiftung Bremen</h2>
     <p>
-      Medienarchiv Günter Grass - Stiftung Bremen<br />
       Jacobs University Bremen<br />
       Campusring 1/RLH<br />
-      28759 Bremen<br /><br />
-
+      28759 Bremen
+    </p>
+    <p>
       Geschäftsführerin<br />
-      Anja Hillerts-Lichtenberg<br /><br />
-
+      Anja Hillerts-Lichtenberg
+    </p>
+    <p>
       E-Mail: office@grass-medienarchiv.de<br />
       Tel.: +49(0)421/200-4840 / -4841<br />
-      Fax: +49(0)421/200-4839<br /><br />
+      Fax: +49(0)421/200-4839
+    </p>
 
-      Medienarchivarin<br />
+    <h2>Medienarchivarin</h2>
+    <p>
       Dipl.-Bibliothekarin Sonja Wohllaib<br />
       Tel.: +49(0)421/200-4838<br />
       Fax: +49(0)421/200-4842<br />
-      E-Mail: archiv@grass-medienarchiv.de<br /><br />
+      E-Mail: archiv@grass-medienarchiv.de
+    </p>
 
-      Technische Ansprechpartner<br />
+    <h2>Technische Ansprechpartner</h2>
+    <p>
       Verbundzentrale des GBV (VZG)<br />
       Digitale Bibliothek, Reposis<br />
       Platz der Göttinger Sieben 1<br />

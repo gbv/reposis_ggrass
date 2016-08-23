@@ -70,6 +70,13 @@
       <label xml:lang="de">Senderfindbuch</label>
     </item>
   </menu>
+  <menu id="register">
+    <label xml:lang="de">Registrieren</label>
+    <label xml:lang="en">Register</label>
+    <item href="/authorization/new-author.xed" type="intern">
+      <label xml:lang="de">Registrieren</label>
+    </item>
+  </menu>
   <menu id="user">
     <label xml:lang="de">Nutzermenü</label>
     <label xml:lang="en">User menu</label>

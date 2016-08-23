@@ -3,7 +3,7 @@
 <MyCoReWebPage>
   <section xml:lang="de" title="Impressum">
   <div>
-    <h2>Impressum</h2>
+    <h1>Impressum</h1>
     <p>
       Günter Grass Stiftung Bremen<br />
       Jacobs University Bremen<br />
@@ -18,20 +18,23 @@
       Die Günter Grass Stiftung Bremen ist eine rechtsfähige Stiftung bürgerlichen Rechts.
       Sitz der Stiftung ist Bremen.
     </p>
+
+    <h2>Vertretungsberechtigte Personen</h2>
     <p>
-      Vertretungsberechtigte Personen:<br />
       Dr. Klaus Meier (Vorsitzender des Vorstands),<br />
       Dr. h.c. Hanjo Kesting (Vorsitzender des Kuratoriums) und <br />
       Anja Hillerts-Lichtenberg (Geschäftsführerin).
     </p>
+
+    <h2>Zuständige Aufsichtsbehörde</h2>
     <p>
-      Zuständige Aufsichtsbehörde:<br />
       Freie Hansestadt Bremen, Senator für Inneres und Sport, Contrescarpe 22/24, 28203 Bremen<br />
       Finanzamt Bremen-Mitte, Rudolf-Hilferding-Platz 1, 28195 Bremen<br />
       Steuernummer: 71/609/100636
     </p>
+
+    <h2>Betrieb</h2>
     <p>
-      Betrieb:<br />
       Die Webdatenbank wird von der Verbundzentrale des GBV (VZG) in Göttingen bereitgestellt und betrieben.
     </p>
   </div>

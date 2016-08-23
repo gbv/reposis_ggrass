@@ -4,7 +4,7 @@
   <section xml:lang="de" title=" Hinweise zur Nutzung und zur rechtlichen Situation">
     <div class="row">
       <div class="col-md-12" lang="de">
-        <h2>Hinweise zur Nutzung und zur rechtlichen Situation</h2>
+        <h1>Hinweise zur Nutzung und zur rechtlichen Situation</h1>
         <p>
           Aufgrund der Urheberrechte ist nur Teil der audiovisuellen Beiträge im Web zu sehen, bzw. zu
           hören (Grün gekennzeichnete Dokumente).  Mit Nachweis der Zugehörigkeit zu einer Universität oder
@@ -50,6 +50,23 @@
             Die Verantwortung für die Einhaltung des geltenden Urheberrechts liegt bei den Nutzerinnen und Nutzern.
           </li>
         </ul>
+
+        <h1>Datenschutz</h1>
+        <p>
+          Sofern innerhalb des Internetangebotes die Möglichkeit zur Eingabe persönlicher oder geschäftlicher
+          Daten (E-Mailadressen, Namen, Anschriften) besteht, so erfolgt die Preisgabe dieser Daten seitens
+          des Nutzers auf ausdrücklich freiwilliger Basis. Die Inanspruchnahme und Bezahlung aller angebotenen
+          Dienste ist - soweit technisch möglich und zumutbar - auch ohne Angabe solcher Daten bzw. unter Angabe
+          anonymisierter Daten oder eines Pseudonyms gestattet. Die Nutzung der im Rahmen des Impressums oder
+          vergleichbarer Angaben veröffentlichten Kontaktdaten wie Postanschriften, Telefon- und Faxnummern sowie
+          E-Mailadressen durch Dritte zur Übersendung von nicht ausdrücklich angeforderten Informationen ist nicht
+          gestattet. Rechtliche Schritte gegen die Versender von sogenannten Spam-Mails bei Verstößen gegen dieses
+          Verbot sind ausdrücklich vorbehalten.
+        </p>
+        <p>
+          Wir weisen Sie darauf hin, dass die Datenübertragung im Internet (z.B. bei der Kommunikation per E-Mail)
+          Sicherheitslücken aufweisen und nicht lückenlos vor dem Zugriff durch Dritte geschützt werden kann.
+        </p>
       </div>
     </div>
   </section>
