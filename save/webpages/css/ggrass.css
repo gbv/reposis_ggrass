@@ -141,6 +141,7 @@ h1 {
 html body header #header_box {
   margin-top: 40px;
   margin-bottom: 0;
+  position: relative;
 }
 
 #project_name_box {
@@ -167,8 +168,8 @@ html body header #header_box {
 
 html body header #header_box #project_logo_box {
   position: absolute;
-  right: 0;
-  top: 75px;
+  right: 15px;
+  top: 35px;
   float: none;
 }
 
