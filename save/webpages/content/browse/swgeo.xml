@@ -14,6 +14,7 @@
                                         field="category.top"
                                  countresults="true"
                                    addclassid="true"
+                                  emptyleaves="false"
                                         style="bootstrap"
                                        sortby="label"
                                  addParameter="XSL.template=template_mir"
