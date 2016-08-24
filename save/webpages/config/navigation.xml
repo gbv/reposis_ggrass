@@ -60,15 +60,21 @@
     <item href="/servlets/solr/find?q=" type="intern">
       <label xml:lang="de">Bestand durchblättern</label>
     </item>
-    <item href="/content/browse/institutes.xml" type="intern">
-      <label xml:lang="de">Inhaltserschließung</label>
+    <item href="/content/browse/genreinhalt.xml" type="intern">
+      <label xml:lang="de">Genre/Inhalt</label>
     </item>
-    <item href="/content/browse/institutes.xml" type="intern">
+    <item href="/content/browse/praesentation.xml" type="intern">
+      <label xml:lang="de">Präsentation</label>
+    </item>
+    <!-- item href="/content/browse/institutes.xml" type="intern">
+      <label xml:lang="de">Inhaltserschließung</label>
+    </item -->
+    <item href="/servlets/MCRActionMappingServlet/personindex/browse" type="intern">
       <label xml:lang="de">Personenfindbuch</label>
     </item>
-    <item href="/content/browse/institutes.xml" type="intern">
+    <!-- item href="/content/browse/institutes.xml" type="intern">
       <label xml:lang="de">Senderfindbuch</label>
-    </item>
+    </item -->
   </menu>
   <menu id="register">
     <label xml:lang="de">Registrieren</label>
