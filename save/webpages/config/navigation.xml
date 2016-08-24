@@ -66,6 +66,15 @@
     <item href="/content/browse/praesentation.xml" type="intern">
       <label xml:lang="de">Präsentation</label>
     </item>
+    <item href="/content/browse/swgeo.xml" type="intern">
+      <label xml:lang="de">Geo-Daten</label>
+    </item>
+    <item href="/content/browse/swsach.xml" type="intern">
+      <label xml:lang="de">Sachschlagworte</label>
+    </item>
+    <item href="/content/browse/swzeit.xml" type="intern">
+      <label xml:lang="de">Zeitschlagworte</label>
+    </item>
     <!-- item href="/content/browse/institutes.xml" type="intern">
       <label xml:lang="de">Inhaltserschließung</label>
     </item -->
