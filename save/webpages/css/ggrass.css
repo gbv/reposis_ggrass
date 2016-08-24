@@ -41,10 +41,25 @@
 }
 
 
-/* ********************* workaround ********************* */
+/* ****************** searchfield_box ******************* */
 .searchfield_box {
-    display: none;
+  position: absolute;
+  left: 0;
 }
+
+.searchfield_box .btn-primary {
+  color: #c3324d;
+  background-color: white;
+  border-width: 0px;
+  margin: 0 0 0 15px;
+  padding:0;
+}
+
+.searchfield_box .form-control,
+.searchfield_box input {
+  border-width: 0px;
+}
+
 
 /* ****************** global settings ******************* */
 

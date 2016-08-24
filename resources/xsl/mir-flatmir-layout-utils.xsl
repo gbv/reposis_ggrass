@@ -19,7 +19,7 @@
           <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form navbar-left pull-right" role="search">
             <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
             <div class="form-group">
-              <input name="q" placeholder="Suche" class="form-control search-query" id="searchInput" type="text" />
+              <input name="q" placeholder="Schnellsuche" class="form-control search-query" id="searchInput" type="text" />
             </div>
           </form>
         </div>
