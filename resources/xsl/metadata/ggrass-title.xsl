@@ -13,10 +13,12 @@
     <!-- headline -->
     <div id="ggrass-title">
       <div class="row">
-        <div class="col-md-2" id="ggrass_databaseID">
-          DB-Nummer: 667
+        <div class="col-md-3" id="ggrass_databaseID">
+          DB-Nummer:
+          <xsl:value-of select="substring-after(mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='intern'], 'DBNummerNeu: ')" />
+          <img id="ggrass_media_icon" src="{$WebApplicationBaseURL}images/audio_icon_metadata.png" />
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
           <h1 itemprop="name">
             <xsl:apply-templates mode="mods.title" select="$mods">
               <xsl:with-param name="type" select="'alternative'" />
