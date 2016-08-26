@@ -65,7 +65,7 @@
         <div id="main_col" class="col-xs-12 col-sm-8">
 
           <div id="headline">
-            <xsl:apply-templates select="div[@id='mir-abstract-title']" mode="copyContent" />
+            <xsl:apply-templates select="div[@id='ggrass-title']" mode="copyContent" />
           </div>
 
   <!-- Nav tabs -->
