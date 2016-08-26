@@ -274,3 +274,37 @@ html body footer .internal_links {
 }
 
 
+/* ********************* breadcrumb ********************* */
+.breadcrumb {
+  padding: 8px 0px;
+  background-color: transparent;
+  font-size: 12px;
+}
+
+
+/* ************************ tabs ************************ */
+
+.nav-tabs {
+    border-bottom: 0;
+    font-size: 14px;
+}
+
+.nav-tabs > li > a:hover {
+    border: 0;
+}
+
+.nav > li > a {
+    padding: 10px 50px;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  border: 0;
+  border-bottom: 2px solid #83b5af;
+  padding-bottom: 0;
+}
+
+.nav > li > a:hover, .nav > li > a:focus {
+  border-bottom: 2px solid #83b5af;
+  background-color: transparent;
+  padding-bottom: 0;
+}
