@@ -79,6 +79,7 @@
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="ggrass_content">
 
+        <div class="col-md-9 col-md-offset-3">
           <div class="detail_block">
           <!-- Start: ABSTRACT -->
             <xsl:apply-templates select="div[@id='mir-abstract-plus']" mode="copyContent" />
@@ -105,6 +106,7 @@
               </div>
             </div>
           </xsl:if>
+        </div>
     </div>
 
     <div role="tabpanel" class="tab-pane" id="ggrass_technics">

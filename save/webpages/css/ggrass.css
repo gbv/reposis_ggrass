@@ -284,35 +284,43 @@ html body footer .internal_links {
 
 /* ************************ tabs ************************ */
 
-.nav-tabs {
+#main_content .nav-tabs {
     border-bottom: 0;
     font-size: 14px;
 }
 
-.nav-tabs > li > a:hover {
+#main_content .nav-tabs > li > a:hover {
     border: 0;
 }
 
-.nav > li > a {
+#main_content .nav > li > a {
     padding: 10px 50px;
 }
 
-.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+#main_content .nav-tabs > li.active > a,
+#main_content .nav-tabs > li.active > a:hover,
+#main_content .nav-tabs > li.active > a:focus {
   border: 0;
   border-bottom: 2px solid #83b5af;
   padding-bottom: 0;
 }
 
-.nav > li > a:hover, .nav > li > a:focus {
+#main_content .nav > li > a:hover,
+#main_content .nav > li > a:focus {
   border-bottom: 2px solid #83b5af;
   background-color: transparent;
   padding-bottom: 0;
 }
 
 
+/* ********************** metadata ********************** */
 #headline {
   margin-bottom: 62px;
 }
 #ggrass_databaseID {
   margin-top: 26px;
+}
+#ggrass_databaseID img {
+    display: block;
+    margin: 18px 0;
 }
