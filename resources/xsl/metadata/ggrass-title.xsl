@@ -52,7 +52,7 @@
         </div>
       </div>
 
-      <xsl:apply-templates mode="present" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[not(@generator)]" />
+      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[not(@generator)]" />
     </div>
 
     <xsl:apply-imports />
