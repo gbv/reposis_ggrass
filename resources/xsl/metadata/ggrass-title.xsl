@@ -41,7 +41,7 @@
 
     <div id="ggrass-title-metadata">
       <div class="row">
-        <div class="col-md-3" id="ggrass_databaseID">
+        <div class="col-md-3 text-right">
           <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.origTitle')" />
         </div>
         <div class="col-md-9">

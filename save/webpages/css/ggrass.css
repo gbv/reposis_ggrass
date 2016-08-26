@@ -302,7 +302,7 @@ html body footer .internal_links {
 }
 
 #main_content .nav > li > a {
-  padding: 10px 50px 7px 50px;
+  padding: 10px 90px 7px 0px;
   color: #666;
 }
 
@@ -328,6 +328,10 @@ html body footer .internal_links {
 #headline {
   margin-bottom: 62px;
 }
+#headline h1 {
+  font-size: 30px;
+  line-height: 36px;
+}
 #ggrass_databaseID {
   margin-top: 26px;
 }
@@ -342,4 +346,8 @@ html body footer .internal_links {
 
 .mir-player {
   margin-top: 46px;
+}
+
+#ggrass-title-metadata {
+  margin-top: 50px;
 }

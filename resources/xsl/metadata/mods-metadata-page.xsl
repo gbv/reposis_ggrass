@@ -108,7 +108,7 @@
           </xsl:if>
         </div>
 
-        <div class="detail_block">
+        <div id="ggrass-title-metadata">
           <xsl:apply-templates select="div[@id='ggrass-title-metadata']" mode="copyContent" />
         </div>
     </div>
