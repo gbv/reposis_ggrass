@@ -78,7 +78,7 @@
   <!-- Tab panes -->
   <div class="tab-content">
     <div role="tabpanel" class="tab-pane active" id="ggrass_content">
-
+      <div class="row">
         <div class="col-md-9 col-md-offset-3">
           <div class="detail_block">
           <!-- Start: ABSTRACT -->
@@ -107,10 +107,12 @@
             </div>
           </xsl:if>
         </div>
+      </div>
 
-        <div id="ggrass-title-metadata">
-          <xsl:apply-templates select="div[@id='ggrass-title-metadata']" mode="copyContent" />
-        </div>
+      <div id="ggrass-title-metadata">
+        <xsl:apply-templates select="div[@id='ggrass-title-metadata']" mode="copyContent" />
+      </div>
+
     </div>
 
     <div role="tabpanel" class="tab-pane" id="ggrass_technics">

@@ -51,9 +51,31 @@
           </xsl:apply-templates>
         </div>
       </div>
+
+      <xsl:apply-templates mode="present" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[not(@generator)]" />
     </div>
 
     <xsl:apply-imports />
+  </xsl:template>
+
+
+
+  <xsl:template match="mods:classification" mode="ggrass">
+    <div class="row">
+      <div class="col-md-3 text-right">
+        <xsl:choose>
+          <xsl:when test="not(contains(i18n:translate(concat('component.mods.metaData.dictionary.', @displayLabel)), 'component.mods.metaData.dictionary.'))">
+            <xsl:value-of select="concat(i18n:translate(concat('component.mods.metaData.dictionary.', @displayLabel)), ':')" />
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:value-of select="concat(i18n:translate('component.mods.metaData.dictionary.classification'), ':')" />
+          </xsl:otherwise>
+        </xsl:choose>
+        </div>
+        <div class="col-md-9">
+          <xsl:apply-templates select="." mode="printModsClassInfo" />
+        </div>
+      </div>
   </xsl:template>
 
 </xsl:stylesheet>
