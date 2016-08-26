@@ -265,3 +265,12 @@ html body footer .internal_links {
 .flatmir-footer .nav > li > a:focus {
   text-decoration: underline;
 }
+
+
+/* *********************** audio ************************ */
+.embed-responsive audio.embed-responsive-item {
+    height: 167px;
+    background: white url('/ggrass/images/audio_poster.png') no-repeat center top;
+}
+
+
