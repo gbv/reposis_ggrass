@@ -9,7 +9,7 @@
   <xsl:template match="/">
 
     <xsl:variable name="mods" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods" />
-    <xsl:variable name="genre" select="$mods/mods:genre[@type='kindof']|$mods/mods:genre[@type='intern'])[1]" />
+    <xsl:variable name="genre" select="($mods/mods:genre[@type='kindof']|$mods/mods:genre[@type='intern'])[1]" />
 
     <!-- headline -->
     <div id="ggrass-title">
