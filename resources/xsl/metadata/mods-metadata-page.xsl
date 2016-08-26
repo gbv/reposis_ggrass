@@ -107,6 +107,10 @@
             </div>
           </xsl:if>
         </div>
+
+        <div class="detail_block">
+          <xsl:apply-templates select="div[@id='ggrass-title-metadata']" mode="copyContent" />
+        </div>
     </div>
 
     <div role="tabpanel" class="tab-pane" id="ggrass_technics">
