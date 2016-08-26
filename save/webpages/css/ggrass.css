@@ -269,7 +269,6 @@ html body footer .internal_links {
 
 /* *********************** audio ************************ */
 .embed-responsive audio.embed-responsive-item {
-    height: 167px;
     background: white url('/ggrass/images/audio_poster.png') no-repeat center top;
 }
 
@@ -285,31 +284,43 @@ html body footer .internal_links {
 /* ************************ tabs ************************ */
 
 #main_content .nav-tabs {
-    border-bottom: 0;
-    font-size: 14px;
+  border-bottom: 0;
+  font-size: 14px;
+}
+
+#main_content .nav-tabs > li {
+  margin-bottom: -2px;
 }
 
 #main_content .nav-tabs > li > a:hover {
-    border: 0;
+  border: 0;
+}
+
+#main_content .nav {
+  border-bottom: 2px solid #efefef;
+  margin-bottom: 54px;
 }
 
 #main_content .nav > li > a {
-    padding: 10px 50px;
+  padding: 10px 50px 7px 50px;
+  color: #666;
+}
+
+#main_content .nav-tabs > li.active {
+  border-bottom: 2px solid #005580;
 }
 
 #main_content .nav-tabs > li.active > a,
 #main_content .nav-tabs > li.active > a:hover,
 #main_content .nav-tabs > li.active > a:focus {
   border: 0;
-  border-bottom: 2px solid #83b5af;
-  padding-bottom: 0;
 }
 
 #main_content .nav > li > a:hover,
 #main_content .nav > li > a:focus {
-  border-bottom: 2px solid #83b5af;
+  border-bottom: 2px solid #005580;
   background-color: transparent;
-  padding-bottom: 0;
+  padding-bottom: 7px;
 }
 
 
@@ -323,4 +334,12 @@ html body footer .internal_links {
 #ggrass_databaseID img {
     display: block;
     margin: 18px 0;
+}
+
+.detail_block {
+  border-bottom: 1px solid #83b5af;
+}
+
+.mir-player {
+  margin-top: 46px;
 }

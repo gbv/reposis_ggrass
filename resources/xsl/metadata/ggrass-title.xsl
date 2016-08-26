@@ -9,7 +9,7 @@
   <xsl:template match="/">
 
     <xsl:variable name="mods" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods" />
-    <xsl:variable name="genre" select="($mods/mods:genre[@type='kindof']|$mods/mods:genre[@type='intern'])[1]" />
+    <xsl:variable name="genre" select="substring-after(($mods/mods:genre[@type='kindof']|$mods/mods:genre[@type='intern'])[1]/@valueURI,'#')" />
 
     <!-- headline -->
     <div id="ggrass-title">
@@ -35,6 +35,20 @@
               <xsl:with-param name="withSubtitle" select="true()" />
             </xsl:apply-templates>
           </h1>
+        </div>
+      </div>
+    </div>
+
+    <div id="ggrass-title-metadata">
+      <div class="row">
+        <div class="col-md-3" id="ggrass_databaseID">
+          <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.origTitle')" />
+        </div>
+        <div class="col-md-9">
+          <xsl:apply-templates mode="mods.title" select="$mods">
+            <xsl:with-param name="asHTML" select="true()" />
+            <xsl:with-param name="withSubtitle" select="true()" />
+          </xsl:apply-templates>
         </div>
       </div>
     </div>
