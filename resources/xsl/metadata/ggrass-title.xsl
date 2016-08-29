@@ -17,15 +17,6 @@
         <div class="col-md-3" id="ggrass_databaseID">
           DB-Nummer:
           <xsl:value-of select="substring-after(mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='intern'], 'DBNummerNeu: ')" />
-          <xsl:choose>
-            <xsl:when test="$genre='audio'">
-              <img id="ggrass_media_icon" src="{$WebApplicationBaseURL}images/audio_icon_metadata.png" />
-            </xsl:when>
-            <xsl:when test="$genre='video'">
-              <img id="ggrass_media_icon" src="{$WebApplicationBaseURL}images/video_icon_metadata.png" />
-            </xsl:when>
-          </xsl:choose>
-
         </div>
         <div class="col-md-9">
           <h1 itemprop="name">

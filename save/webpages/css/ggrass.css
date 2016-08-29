@@ -272,7 +272,7 @@ html body footer .internal_links {
 
 /* *********************** audio ************************ */
 #player_audio {
-  background: white url('/ggrass/images/audio_poster.png') no-repeat center center;
+  background: white url('../images/audio_poster.png') no-repeat center center;
   background-size: contain;
 }
 
