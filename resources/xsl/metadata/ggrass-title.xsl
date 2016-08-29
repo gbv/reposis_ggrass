@@ -50,7 +50,7 @@
 
       <!-- historischer Kontext -->
 
-      <div class="ggrass_bborder" id="ggrass_subject">
+      <div id="ggrass_subject">
         <div class="row">
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.subject')" />
