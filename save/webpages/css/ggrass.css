@@ -271,8 +271,9 @@ html body footer .internal_links {
 
 
 /* *********************** audio ************************ */
-.embed-responsive audio.embed-responsive-item {
-    background: white url('/ggrass/images/audio_poster.png') no-repeat center top;
+#player_audio {
+  background: white url('/ggrass/images/audio_poster.png') no-repeat center center;
+  background-size: contain;
 }
 
 
