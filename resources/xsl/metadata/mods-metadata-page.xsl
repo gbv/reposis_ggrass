@@ -80,7 +80,7 @@
     <div role="tabpanel" class="tab-pane active" id="ggrass_content">
       <div class="row">
         <div class="col-md-9 col-md-offset-3">
-          <div class="detail_block">
+          <div class="detail_block ggrass_bborder">
           <!-- Start: ABSTRACT -->
             <xsl:apply-templates select="div[@id='mir-abstract-plus']" mode="copyContent" />
           <!-- End: ABSTRACT -->
@@ -88,19 +88,25 @@
 
           <!-- viewer -->
           <xsl:if test="div[@id = 'mir-viewer']">
-            <xsl:apply-templates select="div[@id='mir-viewer']" mode="copyContent" />
+            <div class="detail_block ggrass_bborder">
+              <xsl:apply-templates select="div[@id='mir-viewer']" mode="copyContent" />
+            </div>
           </xsl:if>
           <!-- player -->
           <xsl:if test="div[@id = 'mir-player']">
-            <xsl:apply-templates select="div[@id='mir-player']" mode="copyContent" />
+            <div class="detail_block ggrass_bborder">
+              <xsl:apply-templates select="div[@id='mir-player']" mode="copyContent" />
+            </div>
           </xsl:if>
           <!-- audio -->
           <xsl:if test="div[@id = 'mir-audio']">
-            <xsl:apply-templates select="div[@id='mir-audio']" mode="copyContent" />
+            <div class="detail_block ggrass_bborder">
+              <xsl:apply-templates select="div[@id='mir-audio']" mode="copyContent" />
+            </div>
           </xsl:if>
           <!-- files -->
           <xsl:if test="div[contains(@id,'mir-collapse-')]">
-            <div class="detail_block">
+            <div class="detail_block ggrass_bborder">
               <div class="" id="record_detail">
                 <xsl:apply-templates select="div[@id='mir-collapse-files']" mode="copyContent" />
               </div>
