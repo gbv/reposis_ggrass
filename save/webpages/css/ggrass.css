@@ -179,9 +179,12 @@ label {
 
 /* *********************** header *********************** */
 html body header #header_box {
-  margin-top: 40px;
+  margin-top: -1px;
   margin-bottom: 0;
   position: relative;
+  background: #ffffff url('../images/guenter_grass.png') no-repeat 83% top;
+  background-size: contain;
+  height: 192px;
 }
 
 #project_name_box {
