@@ -50,25 +50,52 @@
 
       <!-- historischer Kontext -->
 
-    </div>
+      <div class="ggrass_bborder" id="ggrass_subject">
+        <div class="row">
+          <div class="col-md-3 text-right">
+            <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.subject')" />
+          </div>
+          <div class="col-md-9 ggrass_bborder">
+            <br />
+          </div>
+        </div>
 
-    <div id="ggrass_subjects">
-      <div class="row">
-        <div class="col-md-3 text-right">
-          <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.subject')" />
-        </div>
-        <div class="col-md-9 ggrass_bborder">
-          <br />
-        </div>
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:name[@type='personal']" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.Persons')" />
+          <xsl:with-param name="sep" select="'; '" />
+          <xsl:with-param name="property" select="'keyword'" />
+        </xsl:call-template>
+
+
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:titleInfo[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWWerke']/mods:title" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.SWWerke')" />
+          <xsl:with-param name="sep" select="'; '" />
+          <xsl:with-param name="property" select="'keyword'" />
+        </xsl:call-template>
+
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:topic[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWSach']" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.SWSach')" />
+          <xsl:with-param name="sep" select="'; '" />
+          <xsl:with-param name="property" select="'keyword'" />
+        </xsl:call-template>
+
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:geographic[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/GeoDaten']" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.GeoDaten')" />
+          <xsl:with-param name="sep" select="'; '" />
+          <xsl:with-param name="property" select="'keyword'" />
+        </xsl:call-template>
+
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:temporal[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWZeit']" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.SWZeit')" />
+          <xsl:with-param name="sep" select="'; '" />
+          <xsl:with-param name="property" select="'keyword'" />
+        </xsl:call-template>
       </div>
-
-      <!-- Personen -->
-
-      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWWerke']" />
-      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWSach']" />
-      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/GeoDaten']" />
-      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWZeit']" />
-
     </div>
 
     <xsl:apply-imports />
@@ -93,5 +120,57 @@
         </div>
       </div>
   </xsl:template>
+
+
+  <xsl:template name="printMetaDate.mods.ggrass">
+    <!-- prints a table row for a given nodeset -->
+    <xsl:param name="nodes" />
+    <xsl:param name="label" select="i18n:translate(concat('component.mods.metaData.dictionary.',local-name($nodes[1])))" />
+    <xsl:param name="sep" select="''" />
+    <xsl:param name="property" select="''" />
+    <xsl:message>
+      <xsl:value-of select="concat('label: ',$label)" />
+    </xsl:message>
+    <xsl:message>
+      <xsl:value-of select="concat('nodes: ',count($nodes))" />
+    </xsl:message>
+    <xsl:if test="$nodes">
+      <div class="row">
+        <div class="col-md-3 text-right">
+          <xsl:value-of select="concat($label,':')" />
+        </div>
+        <div class="col-md-9">
+          <xsl:if test="$property != ''">
+            <xsl:attribute name="property">
+              <xsl:value-of select="$property" />
+            </xsl:attribute>
+          </xsl:if>
+          <xsl:variable name="selectPresentLang">
+            <xsl:call-template name="selectPresentLang">
+              <xsl:with-param name="nodes" select="$nodes" />
+            </xsl:call-template>
+          </xsl:variable>
+          <xsl:for-each select="$nodes">
+            <xsl:if test="position()!=1">
+              <xsl:choose>
+                <xsl:when test="string-length($sep)&gt;0">
+                  <xsl:value-of select="$sep" />
+                </xsl:when>
+                <xsl:otherwise>
+                  <br />
+                </xsl:otherwise>
+              </xsl:choose>
+            </xsl:if>
+            <xsl:if test="not(@xml:lang) or @xml:lang=$selectPresentLang">
+              <xsl:call-template name="lf2br">
+                <xsl:with-param name="string" select="normalize-space(.)" />
+              </xsl:call-template>
+            </xsl:if>
+          </xsl:for-each>
+        </div>
+      </div>
+    </xsl:if>
+  </xsl:template>
+
 
 </xsl:stylesheet>

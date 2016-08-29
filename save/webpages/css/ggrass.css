@@ -340,10 +340,13 @@ html body footer .internal_links {
   margin-top: 26px;
 }
 #ggrass_databaseID img {
-    display: block;
-    margin: 18px 0;
+  display: block;
+  margin: 18px 0;
 }
-.ggrass_border {
+#ggrass_subject {
+  color: #83b5af;
+}
+.ggrass_bborder {
   border-bottom: 1px solid #83b5af;
 }
 .mir-player {
