@@ -19,7 +19,7 @@
     </field>
     <field name="search_result_link_text">
       <xsl:variable name="completeTitle">
-        <xsl:apply-templates mode="mods.title" select="$mods">
+        <xsl:apply-templates mode="mods.title" select="metadata/def.modsContainer/modsContainer/mods:mods">
           <xsl:with-param name="type" select="'alternative'" />
           <xsl:with-param name="asHTML" select="true()" />
           <xsl:with-param name="withSubtitle" select="true()" />

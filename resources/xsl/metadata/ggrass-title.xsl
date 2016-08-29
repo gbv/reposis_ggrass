@@ -43,7 +43,32 @@
         </div>
       </div>
 
-      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[not(@generator)]" />
+      <!-- Anfang/Ende -->
+
+      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/GenreInhalt']" />
+      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/Praesentation']" />
+
+      <!-- historischer Kontext -->
+
+    </div>
+
+    <div id="ggrass_subjects">
+      <div class="row">
+        <div class="col-md-3 text-right">
+          <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.subject')" />
+        </div>
+        <div class="col-md-9 ggrass_bborder">
+          <br />
+        </div>
+      </div>
+
+      <!-- Personen -->
+
+      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWWerke']" />
+      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWSach']" />
+      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/GeoDaten']" />
+      <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWZeit']" />
+
     </div>
 
     <xsl:apply-imports />
