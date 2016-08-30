@@ -102,12 +102,6 @@
               <xsl:apply-templates select="div[@id='mir-player']" mode="copyContent" />
             </div>
           </xsl:if>
-          <!-- audio -->
-          <xsl:if test="div[@id = 'mir-audio']">
-            <div class="detail_block" id="mir-audio">
-              <xsl:apply-templates select="div[@id='mir-audio']" mode="copyContent" />
-            </div>
-          </xsl:if>
           <!-- files -->
           <xsl:if test="div[contains(@id,'mir-collapse-')]">
             <div class="detail_block" id="mir-collapse-files">
@@ -116,7 +110,7 @@
               </div>
             </div>
           </xsl:if>
-          <xsl:if test="div[@id = 'mir-viewer'] or div[@id = 'mir-player'] or div[@id = 'mir-audio'] or div[contains(@id,'mir-collapse-')]">
+          <xsl:if test="div[@id = 'mir-viewer'] or div[contains(@id,'mir-collapse-')]">
             <hr class="ggrass_hr" />
           </xsl:if>
         </div>

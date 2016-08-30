@@ -52,10 +52,25 @@
       <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/GenreInhalt']" />
       <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/Praesentation']" />
 
-      <xsl:call-template name="printMetaDate.mods.ggrass">
-        <xsl:with-param name="nodes" select="//mods:mods/mods:note[@type='context']" />
-        <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.note.context')" />
-      </xsl:call-template>
+      <div class="row">
+        <div class="col-md-3 text-right">
+          <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.note.context')" />
+        </div>
+        <div class="col-md-9">
+          <div style="word-wrap: break-word;" class="ellipsis ellipsis-text is-truncated">
+            <p style="display: block;">
+              <xsl:apply-templates select="//mods:mods/mods:note[@type='context']" mode="copyNode" />
+              <a href="#" class="readless hidden" title="read less">
+                <xsl:value-of select="i18n:translate('mir.abstract.readless')" />
+              </a>
+              <a href="#" class="readmore hidden" title="read more">
+                <xsl:value-of select="i18n:translate('mir.abstract.readmore')" />
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
 
       <div class="ggrass_content_block" id="ggrass_subject">
         <div class="row">
