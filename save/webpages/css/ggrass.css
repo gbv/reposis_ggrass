@@ -343,7 +343,7 @@ html body footer .internal_links {
   display: block;
   margin: 18px 0;
 }
-#ggrass_subject > div:nth-child(1) {
+.ggrass_content_block > div:nth-child(1) {
   color: #83b5af;
   font-weight: 400;
 }

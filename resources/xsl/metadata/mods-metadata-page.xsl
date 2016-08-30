@@ -3,7 +3,6 @@
   xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation" xmlns:ex="http://exslt.org/dates-and-times" exclude-result-prefixes="mods mcrxsl i18n ex"
 >
   <xsl:include href="layout-utils.xsl" />
-  <xsl:include href="ggrass-utils.xsl" />
 
   <xsl:param name="MIR.OAS" select="'hide'" />
 

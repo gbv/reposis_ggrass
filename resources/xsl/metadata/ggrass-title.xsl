@@ -5,6 +5,7 @@
 >
 
   <xsl:import href="xslImport:modsmeta:metadata/ggrass-title.xsl" />
+  <xsl:include href="ggrass-utils.xsl" />
 
   <xsl:template match="/">
 
@@ -56,7 +57,7 @@
         <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.note.context')" />
       </xsl:call-template>
 
-      <div id="ggrass_subject">
+      <div class="ggrass_content_block" id="ggrass_subject">
         <div class="row">
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.subject')" />

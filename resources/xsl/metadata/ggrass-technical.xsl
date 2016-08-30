@@ -5,6 +5,7 @@
 >
 
   <xsl:import href="xslImport:modsmeta:metadata/ggrass-technical.xsl" />
+  <xsl:include href="ggrass-utils.xsl" />
 
   <xsl:template match="/">
 
@@ -14,7 +15,7 @@
 
     <div id="ggrass-technical-metadata">
 
-      <div id="ggrass_recording">
+      <div class="ggrass_content_block" id="ggrass_recording">
         <div class="row">
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.recording')" />
@@ -48,7 +49,7 @@
       <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/Betriebsarten']" />
 
       <xsl:call-template name="printMetaDate.mods.ggrass">
-        <xsl:with-param name="nodes" select="//mods:mods/mods:note[@type='quality']" />
+        <xsl:with-param name="nodes" select="//mods:mods/mods:physicalDescription/mods:note[@type='quality']" />
         <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.note.quality')" />
       </xsl:call-template>
 
@@ -64,11 +65,23 @@
           </div>
         </div>
 
-        <!-- TODO -->
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <xsl:with-param name="nodes" select="//mods:mods/mods:physicalDescription[not(mods:reformattingQuality)]/mods:extent[@unit='length']" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.original.length')" />
+        </xsl:call-template>
+
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <xsl:with-param name="nodes" select="//mods:mods/mods:physicalDescription[not(mods:reformattingQuality)]/mods:digitalOrigin" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.original.digital')" />
+        </xsl:call-template>
+
+        <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/OrgTonTID']" />
+        <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/Datenformat']" />
+
       </div>
 
 
-      <div id="ggrass_copy">
+      <div class="ggrass_content_block" id="ggrass_copy">
         <div class="row">
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.copy')" />
@@ -78,11 +91,24 @@
           </div>
         </div>
 
-        <!-- TODO -->
-      </div>
-    </div>
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <xsl:with-param name="nodes" select="//mods:mods/mods:physicalDescription[mods:reformattingQuality/text()='preservation']/mods:extent[@unit='length']" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.copy.length')" />
+        </xsl:call-template>
 
-    <div id="ggrass_origin">
+        <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/TonTID']" />
+
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <!-- xsl:with-param name="nodes" select="//mods:mods/mods:physicalDescription[mods:reformattingQuality/text()='preservation']/mods:extent[not(@unit)]" / -->
+          <xsl:with-param name="nodes" select="//mods:mods/mods:physicalDescription/mods:extent[not(@unit)]" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.copy.count')" />
+        </xsl:call-template>
+
+        <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/DFSichtung']" />
+        <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/DFArchiv']" />
+      </div>
+
+      <div class="ggrass_content_block" id="ggrass_origin">
         <div class="row">
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.origin')" />
@@ -92,7 +118,21 @@
           </div>
         </div>
 
-        <!-- TODO -->
+        <!-- Sender/Institution -->
+
+        <!-- Redation -->
+
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <xsl:with-param name="nodes" select="//mods:mods/mods:note[@type='serial']" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.note.serial')" />
+        </xsl:call-template>
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <xsl:with-param name="nodes" select="//mods:mods/mods:identifier[@type='archives']" />
+        </xsl:call-template>
+        <xsl:call-template name="printMetaDate.mods.ggrass">
+          <xsl:with-param name="nodes" select="//mods:mods/mods:identifier[@type='production']" />
+        </xsl:call-template>
+
       </div>
     </div>
 

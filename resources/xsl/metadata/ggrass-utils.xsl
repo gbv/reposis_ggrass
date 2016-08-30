@@ -62,11 +62,16 @@
                 </xsl:otherwise>
               </xsl:choose>
             </xsl:if>
-            <xsl:if test="not(@xml:lang) or @xml:lang=$selectPresentLang">
-              <xsl:call-template name="lf2br">
-                <xsl:with-param name="string" select="normalize-space(.)" />
-              </xsl:call-template>
-            </xsl:if>
+            <xsl:choose>
+              <xsl:when test="@encoding='w3cdtf'">
+                <xsl:apply-templates select="." mode="rangeDate"/>
+              </xsl:when>
+              <xsl:when test="not(@xml:lang) or @xml:lang=$selectPresentLang">
+                <xsl:call-template name="lf2br">
+                  <xsl:with-param name="string" select="normalize-space(.)" />
+                </xsl:call-template>
+              </xsl:when>
+            </xsl:choose>
           </xsl:for-each>
         </div>
       </div>
