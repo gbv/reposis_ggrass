@@ -18,6 +18,12 @@
         <div class="col-md-3" id="ggrass_databaseID">
           DB-Nummer:
           <xsl:value-of select="substring-after(mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='intern'], 'DBNummerNeu: ')" />
+          <xsl:if test="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='doi']">
+            <br />
+            <a href="http://dx.doi.org/{mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='doi']}">
+              <xsl:value-of select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='doi']" />
+            </a>
+          </xsl:if>
         </div>
         <div class="col-md-9">
           <h1 itemprop="name">
@@ -52,24 +58,26 @@
       <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/GenreInhalt']" />
       <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/Praesentation']" />
 
-      <div class="row">
-        <div class="col-md-3 text-right">
-          <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.note.context')" />
-        </div>
-        <div class="col-md-9">
-          <div style="word-wrap: break-word;" class="ellipsis ellipsis-text is-truncated">
-            <p style="display: block;">
-              <xsl:apply-templates select="//mods:mods/mods:note[@type='context']" mode="copyNode" />
-              <a href="#" class="readless hidden" title="read less">
-                <xsl:value-of select="i18n:translate('mir.abstract.readless')" />
-              </a>
-              <a href="#" class="readmore hidden" title="read more">
-                <xsl:value-of select="i18n:translate('mir.abstract.readmore')" />
-              </a>
-            </p>
+      <xsl:if test="//mods:mods/mods:note[@type='context']">
+        <div class="row">
+          <div class="col-md-3 text-right">
+            <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.note.context')" />
+          </div>
+          <div class="col-md-9">
+            <div style="word-wrap: break-word;" class="ellipsis ellipsis-text is-truncated">
+              <p style="display: block;">
+                <xsl:apply-templates select="//mods:mods/mods:note[@type='context']" mode="copyNode" />
+                <a href="#" class="readless hidden" title="read less">
+                  <xsl:value-of select="i18n:translate('mir.abstract.readless')" />
+                </a>
+                <a href="#" class="readmore hidden" title="read more">
+                  <xsl:value-of select="i18n:translate('mir.abstract.readmore')" />
+                </a>
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </xsl:if>
 
 
       <div class="ggrass_content_block" id="ggrass_subject">
