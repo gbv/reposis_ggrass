@@ -126,9 +126,11 @@
         </xsl:call-template>
         <xsl:call-template name="printMetaDate.mods.ggrass">
           <xsl:with-param name="nodes" select="//mods:mods/mods:identifier[@type='archives']" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.identifier.archives')" />
         </xsl:call-template>
         <xsl:call-template name="printMetaDate.mods.ggrass">
           <xsl:with-param name="nodes" select="//mods:mods/mods:identifier[@type='production']" />
+          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.identifier.production')" />
         </xsl:call-template>
 
       </div>
