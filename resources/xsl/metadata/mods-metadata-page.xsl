@@ -80,11 +80,15 @@
     <div role="tabpanel" class="tab-pane active" id="ggrass_content">
       <div class="row">
         <div class="col-md-9 col-md-offset-3">
-          <div class="detail_block ggrass_bborder">
+
           <!-- Start: ABSTRACT -->
-            <xsl:apply-templates select="div[@id='mir-abstract-plus']" mode="copyContent" />
+          <xsl:if test="div[@id = 'mir-abstract-plus']">
+            <div class="detail_block">
+              <xsl:apply-templates select="div[@id='mir-abstract-plus']" mode="copyContent" />
+            </div>
+            <hr class="ggrass_hr" />
+          </xsl:if>
           <!-- End: ABSTRACT -->
-          </div>
 
           <!-- viewer -->
           <xsl:if test="div[@id = 'mir-viewer']">
@@ -111,6 +115,9 @@
                 <xsl:apply-templates select="div[@id='mir-collapse-files']" mode="copyContent" />
               </div>
             </div>
+          </xsl:if>
+          <xsl:if test="div[@id = 'mir-viewer'] or div[@id = 'mir-player'] or div[@id = 'mir-audio'] or div[contains(@id,'mir-collapse-')]">
+            <hr class="ggrass_hr" />
           </xsl:if>
         </div>
       </div>
