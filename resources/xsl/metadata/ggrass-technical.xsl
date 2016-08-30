@@ -55,7 +55,7 @@
 
       </div>
 
-      <div id="ggrass_original">
+      <div class="ggrass_content_block" id="ggrass_original">
         <div class="row">
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.original')" />

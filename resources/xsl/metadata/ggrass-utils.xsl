@@ -63,7 +63,7 @@
               </xsl:choose>
             </xsl:if>
             <xsl:choose>
-              <xsl:when test="@encoding='w3cdtf'">
+              <xsl:when test="@encoding">
                 <xsl:apply-templates select="." mode="rangeDate"/>
               </xsl:when>
               <xsl:when test="not(@xml:lang) or @xml:lang=$selectPresentLang">
