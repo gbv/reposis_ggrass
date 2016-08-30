@@ -123,7 +123,14 @@
     </div>
 
     <div role="tabpanel" class="tab-pane" id="ggrass_technics">
-<!-- metadata -->
+      <div id="ggrass-technical-metadata">
+        <xsl:apply-templates select="div[@id='ggrass-technical-metadata']" mode="copyContent" />
+      </div>
+    </div>
+
+
+    <div role="tabpanel" class="tab-pane" id="ggrass_persons">
+      <!-- metadata -->
           <xsl:if test="div[contains(@id,'mir-metadata')]/table[@class='mir-metadata']/tr">
             <div class="mir_metadata">
               <h3>
@@ -139,11 +146,6 @@
               </xsl:if>
             </div>
           </xsl:if>
-    </div>
-
-
-    <div role="tabpanel" class="tab-pane" id="ggrass_persons">
-      ...
     </div>
   </div>
 
