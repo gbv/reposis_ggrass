@@ -184,11 +184,11 @@ html body header #header_box {
   position: relative;
   background: #ffffff url('../images/guenter_grass.png') no-repeat 83% top;
   background-size: contain;
-  height: 192px;
+  height: 210px;
 }
 
 #project_name_box {
-  margin-top: 80px;
+  margin-top: 110px;
 }
 
 #project_name_box h1 > a {
@@ -212,8 +212,13 @@ html body header #header_box {
 html body header #header_box #project_logo_box {
   position: absolute;
   right: 15px;
-  top: 35px;
+  top: 85px;
   float: none;
+}
+
+.mir-prop-nav {
+    margin: 20px 0px 0px 0px;
+
 }
 
 /* *********************** footer *********************** */

@@ -99,7 +99,7 @@
         <div class="col-md-6">
           <div id="sponsored_by">
             <a href="http://www.dfg.de">
-              <img src="{$WebApplicationBaseURL}images/logos/DFG_Logo.png" title="Die Entwicklung der Datenbank wurde von der DFG gefördert." alt="sponsored by DFG" />
+              <img src="{$WebApplicationBaseURL}images/logos/dfg_logo_gbv.svg" title="Die Entwicklung der Datenbank ist ein Kooperationsprojekt mit der VZG und wurde von der DFG gefördert. " alt="sponsored by DFG, hostet by VZG" />
             </a>
           </div>
         </div>
