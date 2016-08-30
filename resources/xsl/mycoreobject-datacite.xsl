@@ -135,48 +135,12 @@
 
   <xsl:template name="creators">
     <creators>
-      <xsl:apply-templates select="mods:name[mods:role/mods:roleTerm='aut' or mods:role/mods:roleTerm='cre' or mods:role/mods:roleTerm='orm' or mods:role/mods:roleTerm='mdc']" />
-    </creators>
-  </xsl:template>
-
-  <xsl:template match="mods:name">
-    <xsl:if test="mods:displayForm or mods:namePart or @valueURI">
       <creator>
         <creatorName>
-          <xsl:choose>
-            <xsl:when test="mods:displayForm">
-              <xsl:value-of select="mods:displayForm" />
-            </xsl:when>
-            <xsl:when test="mods:namePart[@type='family'] or mods:namePart[@type='given']">
-              <xsl:value-of select="mods:namePart[@type='family']" />
-              <xsl:if test="mods:namePart[@type='family'] and mods:namePart[@type='given']">
-                <xsl:value-of select="', '" />
-              </xsl:if>
-              <xsl:value-of select="mods:namePart[@type='given']" />
-            </xsl:when>
-            <xsl:when test="mods:namePart">
-              <xsl:for-each select="mods:namePart">
-                <xsl:value-of select="." />
-                <xsl:if test="position() != last()">
-                  <xsl:value-of select="', '" />
-                </xsl:if>
-              </xsl:for-each>)
-            </xsl:when>
-            <xsl:otherwise>
-              <xsl:variable name="classlink" select="mcrmods:getClassCategParentLink(.)" />
-              <xsl:if test="string-length($classlink) &gt; 0">
-                <xsl:for-each select="document($classlink)/mycoreclass//category[position()=1 or position()=last()]">
-                  <xsl:if test="position() > 1">
-                    <xsl:value-of select="', '" />
-                  </xsl:if>
-                  <xsl:value-of select="./label[lang($CurrentLang)]/@text" />
-                </xsl:for-each>
-              </xsl:if>
-            </xsl:otherwise>
-          </xsl:choose>
+          Günter Grass Stiftung - Medienarchiv
         </creatorName>
       </creator>
-    </xsl:if>
+    </creators>
   </xsl:template>
 
   <!-- ========== publisher (1) ========== -->
