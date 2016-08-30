@@ -3,6 +3,7 @@
   xmlns:i18n="xalan://org.mycore.services.i18n.MCRTranslation" xmlns:ex="http://exslt.org/dates-and-times" exclude-result-prefixes="mods mcrxsl i18n ex"
 >
   <xsl:include href="layout-utils.xsl" />
+  <xsl:include href="ggrass-utils.xsl" />
 
   <xsl:param name="MIR.OAS" select="'hide'" />
 
@@ -88,25 +89,25 @@
 
           <!-- viewer -->
           <xsl:if test="div[@id = 'mir-viewer']">
-            <div class="detail_block ggrass_bborder">
+            <div class="detail_block" id="mir-viewer">
               <xsl:apply-templates select="div[@id='mir-viewer']" mode="copyContent" />
             </div>
           </xsl:if>
           <!-- player -->
           <xsl:if test="div[@id = 'mir-player']">
-            <div class="detail_block ggrass_bborder">
+            <div class="detail_block" id="mir-player">
               <xsl:apply-templates select="div[@id='mir-player']" mode="copyContent" />
             </div>
           </xsl:if>
           <!-- audio -->
           <xsl:if test="div[@id = 'mir-audio']">
-            <div class="detail_block ggrass_bborder">
+            <div class="detail_block" id="mir-audio">
               <xsl:apply-templates select="div[@id='mir-audio']" mode="copyContent" />
             </div>
           </xsl:if>
           <!-- files -->
           <xsl:if test="div[contains(@id,'mir-collapse-')]">
-            <div class="detail_block ggrass_bborder">
+            <div class="detail_block" id="mir-collapse-files">
               <div class="" id="record_detail">
                 <xsl:apply-templates select="div[@id='mir-collapse-files']" mode="copyContent" />
               </div>

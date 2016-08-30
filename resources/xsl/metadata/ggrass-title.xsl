@@ -43,12 +43,18 @@
         </div>
       </div>
 
-      <!-- Anfang/Ende -->
+      <xsl:call-template name="printMetaDate.mods.ggrass">
+        <xsl:with-param name="nodes" select="//mods:mods/mods:note[@type='start_end']" />
+        <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.note.start_end')" />
+      </xsl:call-template>
 
       <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/GenreInhalt']" />
       <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/Praesentation']" />
 
-      <!-- historischer Kontext -->
+      <xsl:call-template name="printMetaDate.mods.ggrass">
+        <xsl:with-param name="nodes" select="//mods:mods/mods:note[@type='context']" />
+        <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.note.context')" />
+      </xsl:call-template>
 
       <div id="ggrass_subject">
         <div class="row">
