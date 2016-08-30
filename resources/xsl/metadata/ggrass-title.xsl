@@ -79,53 +79,58 @@
         </div>
       </xsl:if>
 
+      <xsl:if test="//mods:mods/mods:subject/mods:name[@type='personal'] or
+                    //mods:mods/mods:subject/mods:titleInfo[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWWerke']/mods:title or
+                    //mods:mods/mods:subject/mods:topic[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWSach'] or
+                    //mods:mods/mods:subject/mods:geographic[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/GeoDaten'] or
+                    //mods:mods/mods:subject/mods:temporal[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWZeit']">
+        <div class="ggrass_content_block" id="ggrass_subject">
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.subject')" />
+            </div>
+            <div class="col-md-9">
+              <hr class="ggrass_hr" />
+            </div>
+          </div>
 
-      <div class="ggrass_content_block" id="ggrass_subject">
-        <div class="row">
-          <div class="col-md-3 text-right">
-            <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.subject')" />
-          </div>
-          <div class="col-md-9">
-            <hr class="ggrass_hr" />
-          </div>
+          <xsl:call-template name="printMetaDate.mods.ggrass">
+            <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:name[@type='personal']" />
+            <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.Persons')" />
+            <xsl:with-param name="sep" select="'; '" />
+            <xsl:with-param name="property" select="'keyword'" />
+          </xsl:call-template>
+
+
+          <xsl:call-template name="printMetaDate.mods.ggrass">
+            <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:titleInfo[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWWerke']/mods:title" />
+            <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.SWWerke')" />
+            <xsl:with-param name="sep" select="'; '" />
+            <xsl:with-param name="property" select="'keyword'" />
+          </xsl:call-template>
+
+          <xsl:call-template name="printMetaDate.mods.ggrass">
+            <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:topic[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWSach']" />
+            <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.SWSach')" />
+            <xsl:with-param name="sep" select="'; '" />
+            <xsl:with-param name="property" select="'keyword'" />
+          </xsl:call-template>
+
+          <xsl:call-template name="printMetaDate.mods.ggrass">
+            <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:geographic[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/GeoDaten']" />
+            <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.GeoDaten')" />
+            <xsl:with-param name="sep" select="'; '" />
+            <xsl:with-param name="property" select="'keyword'" />
+          </xsl:call-template>
+
+          <xsl:call-template name="printMetaDate.mods.ggrass">
+            <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:temporal[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWZeit']" />
+            <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.SWZeit')" />
+            <xsl:with-param name="sep" select="'; '" />
+            <xsl:with-param name="property" select="'keyword'" />
+          </xsl:call-template>
         </div>
-
-        <xsl:call-template name="printMetaDate.mods.ggrass">
-          <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:name[@type='personal']" />
-          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.Persons')" />
-          <xsl:with-param name="sep" select="'; '" />
-          <xsl:with-param name="property" select="'keyword'" />
-        </xsl:call-template>
-
-
-        <xsl:call-template name="printMetaDate.mods.ggrass">
-          <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:titleInfo[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWWerke']/mods:title" />
-          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.SWWerke')" />
-          <xsl:with-param name="sep" select="'; '" />
-          <xsl:with-param name="property" select="'keyword'" />
-        </xsl:call-template>
-
-        <xsl:call-template name="printMetaDate.mods.ggrass">
-          <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:topic[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWSach']" />
-          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.SWSach')" />
-          <xsl:with-param name="sep" select="'; '" />
-          <xsl:with-param name="property" select="'keyword'" />
-        </xsl:call-template>
-
-        <xsl:call-template name="printMetaDate.mods.ggrass">
-          <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:geographic[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/GeoDaten']" />
-          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.GeoDaten')" />
-          <xsl:with-param name="sep" select="'; '" />
-          <xsl:with-param name="property" select="'keyword'" />
-        </xsl:call-template>
-
-        <xsl:call-template name="printMetaDate.mods.ggrass">
-          <xsl:with-param name="nodes" select="//mods:mods/mods:subject/mods:temporal[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/SWZeit']" />
-          <xsl:with-param name="label" select="i18n:translate('ggrass.metaData.dictionary.subject.SWZeit')" />
-          <xsl:with-param name="sep" select="'; '" />
-          <xsl:with-param name="property" select="'keyword'" />
-        </xsl:call-template>
-      </div>
+      </xsl:if>
     </div>
 
     <xsl:apply-imports />

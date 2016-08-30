@@ -23,6 +23,8 @@
           </div>
         </div>
 
+        <!-- TODO: add content -->
+
       </div>
 
       <div class="ggrass_content_block" id="ggrass_refer">
@@ -34,6 +36,8 @@
             <hr class="ggrass_hr" />
           </div>
         </div>
+
+        <!-- TODO: add content -->
 
       </div>
 
