@@ -10,8 +10,6 @@
   <xsl:template match="/">
 
     <xsl:variable name="mods" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods" />
-    <xsl:variable name="genre" select="substring-after(($mods/mods:genre[@type='kindof']|$mods/mods:genre[@type='intern'])[1]/@valueURI,'#')" />
-
 
     <div id="ggrass-technical-metadata">
 
