@@ -18,8 +18,8 @@
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.persons')" />
           </div>
-          <div class="col-md-9 ggrass_bborder">
-            <br />
+          <div class="col-md-9">
+            <hr class="ggrass_hr" />
           </div>
         </div>
 
@@ -30,8 +30,8 @@
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.refer')" />
           </div>
-          <div class="col-md-9 ggrass_bborder">
-            <br />
+          <div class="col-md-9">
+            <hr class="ggrass_hr" />
           </div>
         </div>
 

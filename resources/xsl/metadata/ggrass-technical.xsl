@@ -18,8 +18,8 @@
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.recording')" />
           </div>
-          <div class="col-md-9 ggrass_bborder">
-            <br />
+          <div class="col-md-9">
+            <hr class="ggrass_hr" />
           </div>
         </div>
 
@@ -58,8 +58,8 @@
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.original')" />
           </div>
-          <div class="col-md-9 ggrass_bborder">
-            <br />
+          <div class="col-md-9">
+            <hr class="ggrass_hr" />
           </div>
         </div>
 
@@ -84,8 +84,8 @@
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.copy')" />
           </div>
-          <div class="col-md-9 ggrass_bborder">
-            <br />
+          <div class="col-md-9">
+            <hr class="ggrass_hr" />
           </div>
         </div>
 
@@ -111,8 +111,8 @@
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.origin')" />
           </div>
-          <div class="col-md-9 ggrass_bborder">
-            <br />
+          <div class="col-md-9">
+            <hr class="ggrass_hr" />
           </div>
         </div>
 
