@@ -56,9 +56,9 @@
 
 
 
-      </div>
+      </div -->
 
-    </div -->
+    </div>
 
     <xsl:apply-imports />
   </xsl:template>
