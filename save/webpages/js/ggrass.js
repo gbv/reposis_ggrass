@@ -8,7 +8,9 @@ $(document).ready(function(){
      policyURL: '/ggrass/content/below/rights.xml',
      expireDays: 1,
      zindex: '4000',
-     domain: 'reposis-test.gbv.de',
-     referrer: 'reposis-test.gbv.de'
+     domain: 'grass-medienarchiv.gbv.de',
+     referrer: 'grass-medienarchiv.gbv.de'
    });
+
+   $('.ggrass_tooltip').tooltip();
 });
