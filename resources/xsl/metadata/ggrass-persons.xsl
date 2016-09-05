@@ -13,21 +13,38 @@
 
     <div id="ggrass-persons-metadata">
 
-      <div class="ggrass_content_block" id="ggrass_persons">
-        <div class="row">
-          <div class="col-md-3 text-right">
-            <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.persons')" />
+      <xsl:if test="$mods/mods:name[@type='personal' and not(mods:role/mods:roleTerm='mdc')]">
+        <div class="ggrass_content_block" id="ggrass_persons">
+          <div class="row">
+            <div class="col-md-3 text-right">
+              <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.persons')" />
+            </div>
+            <div class="col-md-9">
+              <hr class="ggrass_hr" />
+            </div>
           </div>
-          <div class="col-md-9">
-            <hr class="ggrass_hr" />
-          </div>
+
+          <xsl:for-each select="$mods/mods:name[@type='personal' and not(mods:role/mods:roleTerm='mdc')]">
+            <div class="row">
+              <div class="col-md-3 text-right">
+                <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.person')" />
+              </div>
+              <div class="col-md-9">
+                <xsl:value-of select="mods:namePart[@type='family']" />
+                <xsl:text>, </xsl:text>
+                <xsl:value-of select="mods:namePart[@type='given']" />
+                <xsl:text> (</xsl:text>
+                <xsl:value-of select="mcrxsl:getDisplayName('marcrelator',mods:role/mods:roleTerm)" />
+                <xsl:text>)</xsl:text>
+              </div>
+            </div>
+          </xsl:for-each>
+
         </div>
+      </xsl:if>
 
-        <!-- TODO: add content -->
-
-      </div>
-
-      <div class="ggrass_content_block" id="ggrass_refer">
+      <!-- TODO: add content -->
+      <!-- div class="ggrass_content_block" id="ggrass_refer">
         <div class="row">
           <div class="col-md-3 text-right">
             <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.refer')" />
@@ -37,11 +54,11 @@
           </div>
         </div>
 
-        <!-- TODO: add content -->
+
 
       </div>
 
-    </div>
+    </div -->
 
     <xsl:apply-imports />
   </xsl:template>

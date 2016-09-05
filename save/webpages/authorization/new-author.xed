@@ -5,9 +5,7 @@
     <h3>
       <i18n key="selfRegistration.step.create.title" />
     </h3>
-    <p>
-      <i18n key="selfRegistration.step.create.info" />
-    </p>
+    <i18n key="selfRegistration.step.create.info" />
 
     <xed:form class="userEditor form-horizontal" role="form" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mcruser="http://www.mycore.de/components/mcruser">
       <xed:cancel url="{$ServletsBaseURL}MirSelfRegistrationServlet" />
