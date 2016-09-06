@@ -5,10 +5,26 @@
     <h3>
       <i18n key="selfRegistration.step.create.title" />
     </h3>
-    <i18n key="selfRegistration.step.create.info" />
+    <p>
+      Für den Zugang zu den Streams der rechtlich beschränkten Audios
+      und Videos (gelb markiert) ist die Angabe des Forschungsziels und ein
+      Nachweis der wissenschaftlichen Zugehörigkeit notwendig. Dabei kann es
+      sich z. B. um eine gültige E-Mail-Adresse Ihrer Bildungseinrichtung,
+      die Ihnen zugeordnet werden kann, oder um eine Kopie Ihres gültigen
+      Studenten- oder Mitarbeiterausweises handeln.
+    </p>
+    <p>
+      Sie haben die Möglichkeit, diesen Nachweis einfach hochzuladen,
+      oder ihn uns per Mail/Fax/Post zu kommen zu lassen.
+    </p>
+    <p>
+      Die Registrierung erlischt nach einem Jahr automatisch und alle
+      zugehörigen Daten werden gelöscht. Bitte sprechen Sie uns an, wenn
+      Sie länger registriert sein wollen.
+    </p>
 
     <xed:form class="userEditor form-horizontal" role="form" xmlns:xed="http://www.mycore.de/xeditor" xmlns:mcruser="http://www.mycore.de/components/mcruser">
-      <xed:cancel url="{$ServletsBaseURL}MirSelfRegistrationServlet" />
+      <xed:cancel url="{$WebApplicationBaseURL}" />
       <xed:bind xpath="user">
         <xed:bind xpath="attributes/attribute[@name='mailtoken']/@value" initially="{xed:generate-id()}" />
 
@@ -24,6 +40,8 @@
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="realName" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="email" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/user-editor.xed" ref="passwords" />
+            <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/ggrass-user-includes.xed" ref="address4user" />
+            <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/ggrass-user-includes.xed" ref="note" />
             <xed:include uri="xslStyle:user-xeditor-templates:webapp:authorization/new-author-includes.xed" ref="captcha" />
 
             <xed:validate display="global" xpath="/user/@name"
