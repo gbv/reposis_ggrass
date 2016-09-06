@@ -17,7 +17,7 @@
       <div class="row">
         <div class="col-md-3" id="ggrass_databaseID">
           DB-Nummer:
-          <xsl:value-of select="substring-after(mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='intern'], 'DBNummerNeu: ')" /> <!-- TODO: remove -->
+          <xsl:value-of select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='intern']" />
           <xsl:if test="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='doi']">
             <br />
             <a href="http://dx.doi.org/{mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:identifier[@type='doi']}">
