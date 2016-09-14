@@ -31,7 +31,7 @@
         </nav>
       </div>
       <div id="project_name_box">
-        <h1><a href="{$WebApplicationBaseURL}">Webdatenbank</a></h1>
+        <h1><a href="{$WebApplicationBaseURL}">Webdatenbank<sup>BETA</sup></a></h1>
         <h2>Medienarchiv</h2>
       </div>
     </div>

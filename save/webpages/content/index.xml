@@ -4,9 +4,9 @@
     title="Willkommen beim Medienarchiv der Günter Grass Stiftung Bremen">
     <div class="row" id="ggrass_index">
       <div class="col-md-12" lang="de">
-        <h1 class="text-center">
+        <h1>
           Günter Grass Stiftung Bremen – Medienarchiv Webdatenbank</h1>
-        <p class="text-center">
+        <p>
           In der Web-Datenbank des Medienarchivs der Günter
           Grass – Stiftung Bremen werden Ton- und Filmdokumente von, mit
           und über Günter Grass erschlossen, wissenschaftlich
@@ -24,12 +24,12 @@
           Forschungsziels erforderlich. Zugang zu allen vorhandenen  AV-Dokumenten
           bekommen Sie lediglich im Medienarchiv Vorort.">*</a>
         </p>
-        <p class="text-center">
+        <p>
           Die Dokumente werden nach archivischen, literatur-
           und medienwissenschaftlichen Gesichtspunkten formal und
           inhaltlich erschlossen.
         </p>
-        <p class="text-center">
+        <p>
           Zur formalen Erschließung gehört unter anderem das
           Festhalten von Herkunftsinformationen, Entstehungs- und
           Wiedergabebedingungen. Die inhaltliche Erschließung umfasst
@@ -37,7 +37,7 @@
           zeitliche und werkchronologische Einordnung des jeweiligen
           audiovisuellen Dokuments.
         </p>
-        <p class="text-center">
+        <p>
           Für Recherchen in den Erschließungsdaten stehen
           verschiedene Suchmöglichkeiten zur Verfügung. So durchsucht
           eine Volltextsuche die gesamten Erschließungsdaten, während
@@ -45,7 +45,7 @@
           kombinieren lassen. Zudem besteht die Möglichkeit, über
           Findbücher durchzublättern.
         </p>
-        <p class="text-center">
+        <p>
           Die Entwicklung der Datenbank ist ein
           Kooperationsprojekt mit der VZG und wurde von der DFG
           gefördert.
