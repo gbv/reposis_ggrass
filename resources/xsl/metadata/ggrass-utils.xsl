@@ -63,8 +63,16 @@
               </xsl:choose>
             </xsl:if>
             <xsl:choose>
-              <xsl:when test="mods:dateCreated|mods:dateOther|mods:dateIssued|mods:dateCaptured|mods:dateModified">
-                <xsl:apply-templates select="." mode="rangeDate"/>
+              <xsl:when test="./@encoding">
+                <xsl:call-template name="formatISODate">
+                  <xsl:with-param name="date" select="concat(substring-before (., '.'),'Z')" />
+                  <xsl:with-param name="format" select="'dd.MM.yyyy'" />
+                </xsl:call-template>
+              </xsl:when>
+              <xsl:when test="./@unit='length'">
+                <xsl:call-template name="lf2br">
+                  <xsl:with-param name="string" select="normalize-space(substring-before (., '.'))" />
+                </xsl:call-template>
               </xsl:when>
               <xsl:when test="not(@xml:lang) or @xml:lang=$selectPresentLang">
                 <xsl:call-template name="lf2br">
