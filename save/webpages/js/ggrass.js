@@ -5,11 +5,11 @@ $(document).ready(function(){
      acceptText: 'Akzeptieren',
      policyButton: true,
      policyText: 'Rechtliche Regelungen',
-     policyURL: '/ggrass/content/below/rights.xml',
+     policyURL: '/content/below/rights.xml',
      expireDays: 1,
      zindex: '4000',
-     domain: 'grass-medienarchiv.gbv.de',
-     referrer: 'grass-medienarchiv.gbv.de'
+     domain: 'webdatenbank.grass-medienarchiv.de',
+     referrer: 'webdatenbank.grass-medienarchiv.de'
    });
 
    $('.ggrass_tooltip').tooltip();
