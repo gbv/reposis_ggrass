@@ -138,7 +138,7 @@
             </div>
           </div>
 
-          <!-- TODO: Sender/Institution -->
+          <xsl:apply-templates mode="ggrass" select="mycoreobject/metadata/def.modsContainer/modsContainer/mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/Institutionen']" />
 
           <!-- TODO: Redaktion -->
 
