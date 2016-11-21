@@ -79,14 +79,24 @@
                     xpath="condition[@field='category.top'][1]/@value" id="inputSWWerke1"
                     i18n="editor.search.ggrass.swwerke" tooltip="editor.search.ggrass.swwerke.tooltip"
                     uri="xslStyle:items2options:classification:editorComplete:-1:children:SWWerke" />
-              <!-- GeoDaten -->
+              <!-- SWSach -->
                   <mir:template name="selectInput"
-                    xpath="condition[@field='category.top'][2]/@value" id="inputGeoDaten1"
+                    xpath="condition[@field='category.top'][2]/@value" id="inputSWSach1"
+                    i18n="editor.search.mir.swsach" tooltip="editor.search.mir.swsach.tooltip"
+                    uri="xslStyle:items2options:classification:editorComplete:-1:children:SWSach" />
+              <!-- Geo-Daten -->
+                  <mir:template name="selectInput"
+                    xpath="condition[@field='category.top'][3]/@value" id="inputGeoDaten1"
                     i18n="editor.search.mir.geodaten" tooltip="editor.search.mir.geodaten.tooltip"
                     uri="xslStyle:items2options:classification:editorComplete:-1:children:GeoDaten" />
+              <!-- SWZeit -->
+                  <mir:template name="selectInput"
+                    xpath="condition[@field='category.top'][4]/@value" id="inputSWZeit1"
+                    i18n="editor.search.mir.swzeit" tooltip="editor.search.mir.swzeit.tooltip"
+                    uri="xslStyle:items2options:classification:editorComplete:-1:children:SWZeit" />
               <!-- Genre -->
                 <mir:template name="selectInput"
-                  xpath="condition[@field='category.top'][3]/@value" id="inputGenre1"
+                  xpath="condition[@field='category.top'][5]/@value" id="inputGenre1"
                   i18n="editor.search.mir.genre" tooltip="editor.search.genre.tooltip"
                   uri="xslStyle:items2options:classification:editorComplete:-1:children:mir_genres" />
               <!-- Datum -->

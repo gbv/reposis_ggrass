@@ -66,6 +66,9 @@
     <item href="/content/browse/praesentation.xml" type="intern">
       <label xml:lang="de">Präsentation</label>
     </item>
+    <item href="/content/browse/swwerke.xml" type="intern">
+      <label xml:lang="de">Werkschlagworte</label>
+    </item>
     <item href="/content/browse/swgeo.xml" type="intern">
       <label xml:lang="de">Geo-Daten</label>
     </item>
@@ -81,9 +84,6 @@
     <item href="/servlets/MCRActionMappingServlet/personindex/browse" type="intern">
       <label xml:lang="de">Personenfindbuch</label>
     </item>
-    <!-- item href="/content/browse/institutes.xml" type="intern">
-      <label xml:lang="de">Senderfindbuch</label>
-    </item -->
   </menu>
   <menu id="register">
     <label xml:lang="de">Registrieren</label>

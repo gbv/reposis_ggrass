@@ -25,10 +25,7 @@
             <!-- Metadata -->
               <mir:template name="textInput" xpath="condition[@field='allMeta']/@value" id="inputMeta1" i18n="editor.search.metadata" tooltip="editor.search.metadata.tooltip" />
             <!-- Content -->
-              <mir:template name="textInput" xpath="condition[@field='content']/@value" id="inputContent1" i18n="editor.search.derivate" tooltip="editor.search.derivate.tooltip" />
-            <!-- SWWerke -->
-              <mir:template name="selectInput" xpath="condition[@field='category'][1]/@value" id="inputSWWerke1" i18n="editor.search.ggrass.swwerke"
-                tooltip="editor.search.ggrass.swwerke.tooltip" uri="xslStyle:items2options:classification:editorComplete:-1:children:SWWerke" />
+              <!-- mir:template name="textInput" xpath="condition[@field='content']/@value" id="inputContent1" i18n="editor.search.derivate" tooltip="editor.search.derivate.tooltip" / -->
             </div>
             <!-- submit -->
             <div class="panel-footer clearfix">
