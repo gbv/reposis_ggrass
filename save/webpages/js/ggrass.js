@@ -6,7 +6,7 @@ $(document).ready(function(){
      policyButton: true,
      policyText: 'Rechtliche Regelungen',
      policyURL: '/content/below/rights.xml',
-     expireDays: 1,
+     expireDays: 30,
      zindex: '4000',
      domain: 'webdatenbank.grass-medienarchiv.de',
      referrer: 'webdatenbank.grass-medienarchiv.de'
