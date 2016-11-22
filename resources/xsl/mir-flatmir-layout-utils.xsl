@@ -5,6 +5,8 @@
     exclude-result-prefixes="mcrver">
 
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
+  <xsl:param name="piwikID" select="'0'" />
+
   <xsl:template name="mir.navigation">
 
     <div id="header_box" class="clearfix container">
@@ -106,6 +108,23 @@
       </div>
     </div>
     <script type="text/javascript" src="{$WebApplicationBaseURL}js/jquery.cookiebar.js"></script>
+    <!-- Piwik -->
+    <xsl:if test="$piwikID &gt; 0">
+      <script type="text/javascript">
+        var _paq = _paq || [];
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//piwik.gbv.de/";
+          _paq.push(['setTrackerUrl', u+'piwik.php']);
+          _paq.push(['setSiteId', '<xsl:value-of select="$piwikID" />']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+      </script>
+      <noscript><p><img src="//piwik.gbv.de/piwik.php?idsite={$piwikID}" style="border:0;" alt="" /></p></noscript>
+    </xsl:if>
+    <!-- End Piwik Code -->
   </xsl:template>
 
 </xsl:stylesheet>
