@@ -116,7 +116,7 @@
             _paq.push(['trackPageView']);
             _paq.push(['enableLinkTracking']);
             (function() {
-              var u="//piwik.gbv.de/";
+              var u="https://piwik.gbv.de/";
               _paq.push(['setTrackerUrl', u+'piwik.php']);
               _paq.push(['setSiteId', '<xsl:value-of select="$piwikID" />']);
               _paq.push(['setDownloadExtensions', '7z|aac|arc|arj|asf|asx|avi|bin|bz|bz2|csv|deb|dmg|doc|exe|flv|gif|gz|gzip|hqx|jar|jpg|jpeg|js|mp2|mp3|mp4|mpg|mpeg|mov|movie|msi|msp|odb|odf|odg|odp|ods|odt|ogg|ogv|pdf|phps|png|ppt|qt|qtm|ra|ram|rar|rpm|sea|sit|tar|tbz|tbz2|tgz|torrent|txt|wav|wma|wmv|wpd|z|zip']);
@@ -124,7 +124,7 @@
               g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
             })();
       </script>
-      <noscript><p><img src="//piwik.gbv.de/piwik.php?idsite={$piwikID}" style="border:0;" alt="" /></p></noscript>
+      <noscript><p><img src="https://piwik.gbv.de/piwik.php?idsite={$piwikID}" style="border:0;" alt="" /></p></noscript>
     </xsl:if>
     <!-- End Piwik Code -->
   </xsl:template>
