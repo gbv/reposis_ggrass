@@ -117,6 +117,10 @@
             _paq.push(['enableLinkTracking']);
             (function() {
               var u="https://piwik.gbv.de/";
+              var objectID = '<xsl:value-of select="/mycoreobject/@ID" />';
+              if(objectID != "") {
+                _paq.push(["setCustomVariable",1, "object", objectID, "page"]);
+              }
               _paq.push(['setTrackerUrl', u+'piwik.php']);
               _paq.push(['setSiteId', '<xsl:value-of select="$piwikID" />']);
               _paq.push(['setDownloadExtensions', '7z|aac|arc|arj|asf|asx|avi|bin|bz|bz2|csv|deb|dmg|doc|exe|flv|gif|gz|gzip|hqx|jar|jpg|jpeg|js|mp2|mp3|mp4|mpg|mpeg|mov|movie|msi|msp|odb|odf|odg|odp|ods|odt|ogg|ogv|pdf|phps|png|ppt|qt|qtm|ra|ram|rar|rpm|sea|sit|tar|tbz|tbz2|tgz|torrent|txt|wav|wma|wmv|wpd|z|zip']);
