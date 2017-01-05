@@ -117,7 +117,7 @@
             _paq.push(['enableLinkTracking']);
             (function() {
               var u="https://piwik.gbv.de/";
-              var objectID = '<xsl:value-of select="/mycoreobject/@ID" />';
+              var objectID = '<xsl:value-of select="//site/@ID" />';
               if(objectID != "") {
                 _paq.push(["setCustomVariable",1, "object", objectID, "page"]);
               }
