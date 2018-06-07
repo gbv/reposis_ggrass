@@ -24,8 +24,8 @@
       <label xml:lang="en">Contact</label>
     </item>
     <item href="/content/below/rights.xml" type="intern">
-      <label xml:lang="de">Rechte</label>
-      <label xml:lang="en">Rights</label>
+      <label xml:lang="de">Datenschutz</label>
+      <label xml:lang="en">Privacy Notice</label>
     </item>
   </menu>
   <menu id="search">
