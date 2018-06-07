@@ -76,7 +76,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <p>© 2016 Günter Grass Stiftung Bremen - Medienarchiv</p>
+          <p>© 2018 Günter Grass Stiftung Bremen - Medienarchiv</p>
         </div>
         <div class="col-md-8">
           <ul class="internal_links nav navbar-nav">
