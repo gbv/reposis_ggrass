@@ -74,6 +74,14 @@
                   <xsl:with-param name="string" select="normalize-space(substring-before (., '.'))" />
                 </xsl:call-template>
               </xsl:when>
+              <xsl:when test="mods:namePart[@type='given'] and mods:namePart[@type='family']">
+                <xsl:value-of select="concat(mods:namePart[@type='family'], ', ',mods:namePart[@type='given'])" />
+                <xsl:if test="mods:nameIdentifier[@type='gnd']">
+                  <a href="http://d-nb.info/gnd/{mods:nameIdentifier[@type='gnd']}" title="Link zu GND">
+                    <sup>GND</sup>
+                  </a>
+                </xsl:if>
+              </xsl:when>
               <xsl:when test="not(@xml:lang) or @xml:lang=$selectPresentLang">
                 <xsl:call-template name="lf2br">
                   <xsl:with-param name="string" select="normalize-space(.)" />

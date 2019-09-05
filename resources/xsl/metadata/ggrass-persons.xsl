@@ -33,6 +33,11 @@
                 <xsl:value-of select="mods:namePart[@type='family']" />
                 <xsl:text>, </xsl:text>
                 <xsl:value-of select="mods:namePart[@type='given']" />
+                <xsl:if test="mods:nameIdentifier[@type='gnd']">
+                  <a href="http://d-nb.info/gnd/{mods:nameIdentifier[@type='gnd']}" title="Link zu GND">
+                    <sup>GND</sup>
+                  </a>
+                </xsl:if>
                 <xsl:text> (</xsl:text>
                 <xsl:value-of select="mcrxsl:getDisplayName('marcrelator',mods:role/mods:roleTerm)" />
                 <xsl:text>)</xsl:text>
