@@ -14,7 +14,7 @@
     <div id="ggrass-notes-metadata">
 
       <xsl:if test="$mods/mods:note">
-        <div class="ggrass_content_block" id="ggrass_notes">
+        <div id="ggrass_notes">
 
           <xsl:if test="$mods/mods:note[@type='content']">
             <div class="row">
