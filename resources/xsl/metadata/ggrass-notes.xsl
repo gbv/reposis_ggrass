@@ -23,6 +23,8 @@
               </div>
               <div class="col-md-9">
                 <xsl:value-of select="$mods/mods:note[@type='content']" />
+                <span class="ggrass_noteInfo" data-html="true" data-toggle="tooltip" data-original-title="{i18n:translate('ggrass.metaData.dictionary.notes.content.info')}"
+                  ><i class="glyphicon glyphicon-info-sign"></i></span>
               </div>
             </div>
           </xsl:if>
@@ -34,6 +36,8 @@
               </div>
               <div class="col-md-9">
                 <xsl:value-of select="$mods/mods:note[@type='user']" />
+                <span class="ggrass_noteInfo" data-html="true" data-toggle="tooltip" data-original-title="{i18n:translate('ggrass.metaData.dictionary.notes.user.info')}"
+                  ><i class="glyphicon glyphicon-info-sign"></i></span>
               </div>
             </div>
           </xsl:if>

@@ -322,6 +322,13 @@ html body footer .internal_links {
   padding-right: 50px;
 }
 
+span.ggrass_noteInfo {
+  display: block;
+  text-align: right;
+  float: right;
+  padding-bottom: 20px;
+}
+
 #main_content .nav-tabs > li.active {
   border-bottom: 2px solid #005580;
 }
