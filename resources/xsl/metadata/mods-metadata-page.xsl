@@ -73,6 +73,7 @@
     <li role="presentation" class="active"><a href="#ggrass_content" aria-controls="ggrass_content" role="tab" data-toggle="tab">Inhaltliche Daten</a></li>
     <li role="presentation"><a href="#ggrass_technics" aria-controls="ggrass_technics" role="tab" data-toggle="tab">Technische Daten</a></li>
     <li role="presentation"><a href="#ggrass_persons" aria-controls="ggrass_persons" role="tab" data-toggle="tab">Personen und Verweise</a></li>
+    <li role="presentation"><a href="#ggrass_notes" aria-controls="ggrass_notes" role="tab" data-toggle="tab">Anmerkungen</a></li>
   </ul>
 
   <!-- Tab panes -->
@@ -132,6 +133,12 @@
     <div role="tabpanel" class="tab-pane" id="ggrass_persons">
       <div id="ggrass-persons-metadata">
         <xsl:apply-templates select="div[@id='ggrass-persons-metadata']" mode="copyContent" />
+      </div>
+    </div>
+
+    <div role="tabpanel" class="tab-pane" id="ggrass_notes">
+      <div id="ggrass-notes-metadata">
+        <xsl:apply-templates select="div[@id='ggrass-notes-metadata']" mode="copyContent" />
       </div>
     </div>
   </div>
