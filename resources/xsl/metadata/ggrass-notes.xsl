@@ -15,14 +15,6 @@
 
       <xsl:if test="$mods/mods:note">
         <div class="ggrass_content_block" id="ggrass_notes">
-          <div class="row">
-            <div class="col-md-3 text-right">
-              <xsl:value-of select="i18n:translate('ggrass.metaData.dictionary.notes')" />
-            </div>
-            <div class="col-md-9">
-              <hr class="ggrass_hr" />
-            </div>
-          </div>
 
           <xsl:if test="$mods/mods:note[@type='content']">
             <div class="row">

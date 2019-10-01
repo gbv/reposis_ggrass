@@ -318,6 +318,10 @@ html body footer .internal_links {
   color: #666;
 }
 
+#main_content .nav-tabs > li > a {
+  padding-right: 50px;
+}
+
 #main_content .nav-tabs > li.active {
   border-bottom: 2px solid #005580;
 }
