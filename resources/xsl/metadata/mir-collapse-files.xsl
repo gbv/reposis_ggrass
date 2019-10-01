@@ -9,6 +9,7 @@
   <xsl:param name="MCR.URN.Resolver.MasterURL" select="''" />
   <xsl:template match="/">
 
+    <xsl:if test="mycoreobject/structure/derobjects">
     <xsl:choose>
       <xsl:when test="key('rights', mycoreobject/@ID)/@read or key('rights', mycoreobject/structure/derobjects/derobject/@xlink:href)/@accKeyEnabled">
 
@@ -124,6 +125,7 @@
         </xsl:comment>
       </xsl:otherwise>
     </xsl:choose>
+    </xsl:if>
     <xsl:apply-imports />
   </xsl:template>
 </xsl:stylesheet>
