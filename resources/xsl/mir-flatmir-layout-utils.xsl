@@ -49,7 +49,7 @@
           nicht jetzt zugetragen haben.“
         </div>
         <div class="source">
-          Das Treffen im Teigte (1979)
+          Günter Grass, Das Treffen in Telgte (1979)
         </div>
       </div>
 
