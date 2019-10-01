@@ -10,13 +10,16 @@
   <xsl:template name="mir.navigation">
 
     <div id="header_box" class="clearfix container">
+
+      <!-- logo -->
       <div id="project_logo_box">
         <a title="zur Homepage der Günter Grass Stiftung Bremen - Medienarchiv" href="http://www.grass-medienarchiv.de">
           <img alt="Logo der Günter Grass Stiftung Bremen" src="{$WebApplicationBaseURL}images/logos/ggrass_logo.png" />
         </a>
       </div>
-      <div id="options_nav_box" class="mir-prop-nav">
 
+      <!-- options -->
+      <div id="options_nav_box" class="mir-prop-nav">
         <div class="searchfield_box">
           <form action="{$WebApplicationBaseURL}servlets/solr/find?q={0}" class="navbar-form navbar-left pull-right" role="search">
             <button type="submit" class="btn btn-primary"><i class="fa fa-search"></i></button>
@@ -25,17 +28,31 @@
             </div>
           </form>
         </div>
-
         <nav>
           <ul class="nav navbar-nav pull-right">
             <xsl:call-template name="mir.loginMenu" />
           </ul>
         </nav>
       </div>
+
+      <!-- name -->
       <div id="project_name_box">
         <h1><a href="{$WebApplicationBaseURL}">Webdatenbank</a></h1>
         <h2>Medienarchiv</h2>
       </div>
+
+      <!-- cite -->
+      <div id="header_cite_box">
+        <div class="cite">
+          „Gestern wird sein, was morgen gewesen ist.
+          Unsere Geschichten von heute müssen sich
+          nicht jetzt zugetragen haben.“
+        </div>
+        <div class="source">
+          Das Treffen im Teigte (1979)
+        </div>
+      </div>
+
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

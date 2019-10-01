@@ -377,3 +377,105 @@ html body footer .internal_links {
 #ggrass-title-metadata .row {
   margin-bottom: 16px;
 }
+
+
+
+/*****************************************************************************
+ * changes for REP-264
+ *****************************************************************************/
+
+/* xs: default up to 750px ***************************************************/
+
+/* hide background image for small screens */
+#header_box {
+    background-image: none;
+}
+/* hide project logo for small screens */
+#project_logo_box {
+    display: none;
+}
+/* hide cites for small screens */
+#header_cite_box {
+    display: none;
+}
+
+/* fix burger menu, set correct color for the stripes */
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #63a29a;;
+}
+
+/* cite box settings */
+#header_cite_box {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 30%;
+    padding: 10px;
+}
+
+#header_cite_box .cite {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#header_cite_box .source {
+    font-size: 12px;
+}
+
+/* fixes searchbar line break for small devices */
+#options_nav_box .navbar-form .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+}
+#options_nav_box .navbar-form .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+
+/* fixes alignment for searchbar for smal devices*/
+.searchfield_box {
+    left: 20px;
+}
+
+/* xs hd */
+@media (min-width: 420px) {
+}
+
+/* custom width */
+@media (min-width: 550px) {
+    #header_box {
+        background-image: url('grafik_armena.jpg') ;
+        background-repeat:no-repeat;
+        background-position: 250px 50%;
+    }
+}
+
+/* sm: up to 970 px **********************************************************/
+/* in less you can use @screen-tablet */
+@media (min-width: 768px) {
+
+    /* set back searchbar alignment for higher resolutions */
+    .searchfield_box {
+        left: 0px;
+    }
+}
+
+
+/* md: up to 1170 px *********************************************************/
+/* in less you can use @screen-desktop */
+@media (min-width: 992px) {
+    #project_logo_box {
+        display: block;
+    }
+}
+
+/* lg: larger than 1170 px ***************************************************/
+/* in less you can use@screen-lg-desktop */
+@media (min-width: 1200px) {
+    #header_cite_box {
+        display: block;
+    }
+
+}
