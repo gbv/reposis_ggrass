@@ -434,7 +434,7 @@ html body footer .internal_links {
     vertical-align: middle;
 }
 
-/* fixes alignment for searchbar for smal devices*/
+/* fixes alignment for searchbar for small devices*/
 .searchfield_box {
     left: 20px;
 }
@@ -446,7 +446,7 @@ html body footer .internal_links {
 /* custom width */
 @media (min-width: 550px) {
     #header_box {
-        background-image: url('grafik_armena.jpg') ;
+        background-image: url('../images/grafik_armena.jpg') ;
         background-repeat:no-repeat;
         background-position: 250px 50%;
     }
