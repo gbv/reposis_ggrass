@@ -22,7 +22,7 @@
           <xsl:apply-templates select="./metadata/def.modsContainer/modsContainer/mods:mods" mode="mods.title" />
         </xsl:when>
         <xsl:otherwise>
-          <xsl:apply-templates mode="mods.title" select="$mods">
+          <xsl:apply-templates mode="mods.title" select="//mods:mods">
             <xsl:with-param name="type" select="'alternative'" />
             <xsl:with-param name="asHTML" select="false()" />
             <xsl:with-param name="withSubtitle" select="true()" />
@@ -31,7 +31,7 @@
       </xsl:choose>
     </xsl:variable>
 
-    <xsl:value-of select="mcrxml:shortenText($completeTitle, 70)" />
+    <xsl:value-of select="mcrxsl:shortenText($completeTitle, 70)" />
   </xsl:template>
   
 </xsl:stylesheet>
