@@ -92,11 +92,11 @@
           <!-- End: ABSTRACT -->
 
           <!-- viewer -->
-          <xsl:if test="div[@id = 'mir-viewer']">
+          <!-- xsl:if test="div[@id = 'mir-viewer']">
             <div class="detail_block" id="mir-viewer">
               <xsl:apply-templates select="div[@id='mir-viewer']" mode="copyContent" />
             </div>
-          </xsl:if>
+          </xsl:if -->
           <!-- player -->
           <xsl:if test="div[@id = 'mir-player']">
             <div class="detail_block" id="mir-player">
@@ -104,7 +104,7 @@
             </div>
           </xsl:if>
           <!-- files -->
-          <xsl:if test="div[contains(@id,'mir-collapse-')]">
+          <xsl:if test="div[contains(@id,'mir-collapse-')] and not(mcrxsl:isCurrentUserGuestUser())">
             <div class="detail_block" id="mir-collapse-files">
               <div class="" id="record_detail">
                 <xsl:apply-templates select="div[@id='mir-collapse-files']" mode="copyContent" />
