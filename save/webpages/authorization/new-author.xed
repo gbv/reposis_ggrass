@@ -6,12 +6,12 @@
       <i18n key="selfRegistration.step.create.title" />
     </h3>
     <p>
-      Für den Zugang zu den Streams der rechtlich beschränkten Audios
-      und Videos ist die Angabe des Forschungsziels und ein
-      Nachweis der wissenschaftlichen Zugehörigkeit notwendig. Dabei kann es
-      sich z. B. um eine gültige E-Mail-Adresse Ihrer Bildungseinrichtung,
-      die Ihnen zugeordnet werden kann, oder um eine Kopie Ihres gültigen
-      Studenten- oder Mitarbeiterausweises handeln.
+      Für den Zugang zu den Streams der rechtlich beschränkten Audios und Videos
+      ist die Angabe des Forschungsziels und ein Nachweis der wissenschaftlichen
+      Zugehörigkeit notwendig. Dabei kann es sich z. B. um eine gültige
+      E-Mail-Adresse Ihrer Bildungseinrichtung, die Ihnen zugeordnet werden kann,
+      oder um eine Kopie Ihres gültigen Studierenden- oder Mitarbeitendenausweises
+      handeln.
     </p>
     <p>
       Bitte wenden Sie sich mit den entsprechenden Unterlagen
@@ -20,7 +20,7 @@
     <p>
       Alternativ gibt es die Möglichkeit, das Archiv persönlich zu besuchen oder
       die Dokumente mit Fernzugriff anzuhören, bzw. zu sichten. Fragen Sie nach
-      einem Termin unter archiv[at]grass-medienarchiv.de.
+      einem Termin unter: archiv[at]grass-medienarchiv.de.
     </p>
   </section>
 </MyCoReWebPage>
