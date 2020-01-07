@@ -127,7 +127,8 @@
 
       <xsl:if test="//mods:mods/mods:note[@type='serial'] or
                     //mods:mods/mods:identifier[@type='archives'] or
-                    //mods:mods/mods:identifier[@type='production']">
+                    //mods:mods/mods:identifier[@type='production'] or
+                    //mods:mods/mods:classification[@authorityURI='http://webdatenbank.grass-medienarchiv.de/classifications/Institutionen']">
         <div class="ggrass_content_block" id="ggrass_origin">
           <div class="row">
             <div class="col-md-3 text-right">
