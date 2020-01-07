@@ -2,7 +2,8 @@
 <xsl:stylesheet version="1.0"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:mcrver="xalan://org.mycore.common.MCRCoreVersion"
-    exclude-result-prefixes="mcrver">
+    xmlns:calendar="xalan://java.util.GregorianCalendar"
+    exclude-result-prefixes="mcrver calendar">
 
   <xsl:import href="resource:xsl/layout/mir-common-layout.xsl" />
   <xsl:param name="piwikID" select="'0'" />
@@ -93,7 +94,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <p>© 2019 Günter Grass Stiftung Bremen - Medienarchiv</p>
+          <xsl:variable name="tmp" select="calendar:new()"/>
+          <p>
+            <xsl:text>© </xsl:text>
+            <xsl:value-of select="calendar:get($tmp, 1)"/>
+            <xsl:text> Günter Grass Stiftung Bremen - Medienarchiv</xsl:text>
+          </p>
         </div>
         <div class="col-md-8">
           <ul class="internal_links nav navbar-nav">
