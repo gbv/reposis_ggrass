@@ -27,6 +27,10 @@
       <label xml:lang="de">Datenschutz</label>
       <label xml:lang="en">Privacy Notice</label>
     </item>
+    <item href="/content/below/accessibility.xml" type="intern">
+      <label xml:lang="de">Barrierefreiheit</label>
+      <label xml:lang="en">Accessibility</label>
+    </item>
   </menu>
   <menu id="search">
     <!-- search menu  -->

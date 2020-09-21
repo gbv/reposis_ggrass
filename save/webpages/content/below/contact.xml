@@ -16,17 +16,9 @@
       Horst Monsees
     </p>
     <p>
-      E-Mail: monsees[at]grass-medienarchiv.de<br />
+      E-Mail: <span class="madress">monsees[at]grass-medienarchiv.de</span><br />
       Tel.: +49(0)421/200-4840 / -4841<br />
       Fax: +49(0)421/200-4839
-    </p>
-
-    <h2>Medienarchivarin</h2>
-    <p>
-      Dipl.-Bibliothekarin Sonja Wohllaib<br />
-      Tel.: +49(0)421/200-4838<br />
-      Fax: +49(0)421/200-4842<br />
-      E-Mail: archiv[at]grass-medienarchiv.de
     </p>
 
     <h2>Technische Ansprechpartner</h2>
@@ -39,11 +31,11 @@
       Fax: +49(0)551/39-13980<br />
       Internet: <a href="https://www.gbv.de/Verbundzentrale/serviceangebote/reposis-repository-service"
         >https://www.gbv.de/Verbundzentrale/serviceangebote/reposis-repository-service</a><br />
-      E-Mail: dms-list[at]lists.gbv.de
+      E-Mail: <span class="madress">dms-list[at]lists.gbv.de</span>
     </p>
   </div>
   </section>
   <meta>
-    <log date="2018-08-22" time="10:07" labelPath=" » Kontakt" lastEditor="Kathleen Neumann" />
+    <log date="2020-09-21" time="11:25" labelPath=" » Kontakt" lastEditor="Kathleen Neumann" />
   </meta>
 </MyCoReWebPage>
