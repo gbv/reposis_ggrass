@@ -166,14 +166,17 @@
             </div>
           </xsl:if>
 <!-- OAS statistics -->
-          <xsl:if test="$MIR.OAS = 'show'">
+          <xsl:if test="$MIR.OAS = 'show' and div[@id='mir-oastatistics']">
             <div class="panel panel-default">
               <div class="panel-heading">
-                <h3 class="panel-title">
+                <div class="row"> 
+                  <h3 class="panel-title col-md-9" style="margin-top:10px">
                   <xsl:value-of select="i18n:translate('mir.oas.panelheading')" />
                 </h3>
+                  <div class="col-md-3 text-right"><img src="{$WebApplicationBaseURL}images/epusta/epustalogo_small.png" style="height: 40px;"/></div>
+                </div>
               </div>
-              <div class="panel-body" id="mir_oas">
+              <div class="panel-body">
                 <xsl:apply-templates select="div[@id='mir-oastatistics']" mode="copyContent" />
               </div>
             </div>
